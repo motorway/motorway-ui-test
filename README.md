@@ -24,8 +24,10 @@ We appreciate that your time is valuable and recommend you not spend more than 2
 ## Tasks
 
 - The API returns an array of objects, the main focus of it is the image and user it returns. The task is to create an interesting responsive interface using as many of the latest technologies that browsers provide that you feel are appropriate, this includes HTML, CSS, JS and React features if you're feeling adventurous.
+Unfortunately, the images aren't optimised and their dimensions are varied, so this will need to be taken into account.
 These do not need to be production ready and pixel perfect design isn't necessarily required, the goal of this task is to show your understanding of the underlying concepts to a good degree.
-- The API returning images is rather slow, can it be sped up can the performance increase be quantified.
+
+- The API returning images is rather slow, can it be sped up and can the performance increase be quantified.
 - Add a form to the app with at least 5 different input types and validation. It doesn't need to post anywhere specifically, a11y and usability are key here.
 
 ## Browser compatibility
