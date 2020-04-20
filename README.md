@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Motorway UI Test
 
-## Available Scripts
+Welcome to the Motorway UI Technical Test. This test focuses on the user experience and your skills with HTML/CSS/a11y and leveraging browser APIs.
 
-In the project directory, you can run:
+# Set up
+This repo is a slightly modified Create React App and an express server which serves a JSON feed of images.
 
-### `yarn start`
+### Set up
+- Clone the repo and run `npm install`
+- `npm run serve` will run the server
+- in another terminal window `npm run start` will start CRA
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After this, CRA will open a tab with the app running, usually `localhost:3000`. If you look in `src/App.js` you'll see the API call to the server is already made and will console log out the results.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Note
+- The server and CRA are watching the relevant files and will hot reload if any changes are made.
+- Feel free to modify or install whatever code you feel is necessary. If installing packages which are wrappers for native browsers APIs please leave a comment explaining why.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Time allocated
 
-### `yarn build`
+We appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tasks
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- The API returns an array of objects, the main focus of it is the image and user it returns. The task is to create an interesting responsive interface using as many of the latest technologies that browsers provide that you feel are appropriate, this includes HTML, CSS, JS and React features if you're feeling adventurous.
+These do not need to be production ready and pixel perfect design isn't necessarily required, the goal of this task is to show your understanding of the underlying concepts to a good degree.
+- The API returning images is rather slow, can it be sped up can the performance increase be quantified.
+- Add a form to the app with at least 5 different input types and validation. It doesn't need to post anywhere specifically, a11y and usability are key here.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Browser compatibility
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+It will be tested in the browser of your choice, if you want to use something only supported in Safari or Chrome Canary, then by all means go for it.

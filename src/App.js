@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [images, setImages] = useState();
+
+  useEffect(() => {
+    fetch('http://localhost:3001/images?limit=10')
+      .then(res => res.json())
+      .then(data => {
+        console.log('Success:', data);
+        setImages(data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      {
+        images && images.map(img => (
+          <div key={img.id} >
+            <img src={img.url} alt=''/>
+            <img src={img.user.profile_image} alt=''/>
+          </div>
+        ))
+      }
     </div>
   );
 }
