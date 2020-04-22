@@ -37,12 +37,15 @@ Images aren't optimised and their dimensions are varied, so you will need to tak
 #### Inspiration:
 
 https://twitter.com/andybarefoot/status/1251844621262602242
+
 http://www.artist-developer.com/
 
 #### Some ideas to get you started:
 
 Resizable thumbnails
+
 Modal to review full size images
+
 Image effects or filters
 
 
