@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms: Images Should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root MuiBox-root-1 image_container"
+  >
+    <img
+      alt=""
+      class="image"
+      src="fakeUrl"
+    />
+    <img
+      alt=""
+      class="image"
+      src="fakeImageUrl"
+    />
+  </div>
+</DocumentFragment>
+`;

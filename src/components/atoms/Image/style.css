@@ -1,0 +1,11 @@
+.image_container {
+  display: flex;
+  width: calc(calc(100% - 4rem) / 3);
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+}
