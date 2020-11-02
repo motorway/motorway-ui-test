@@ -1,21 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useImages from "./hooks/use-images";
 import "./App.css";
 
 const App = () => {
-  const [images, setImages] = useState();
-
-  useEffect(() => {
-    fetch("http://localhost:3000/images?limit=10")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Success:", data);
-        setImages(data);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  }, []);
-
+  const { images } = useImages();
   return (
     <div className="app">
       {images &&
