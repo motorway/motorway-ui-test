@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Molecules: Images Should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="images_container"
+  >
+    <div>
+       fake image
+    </div>
+    <div>
+       fake image
+    </div>
+  </div>
+</DocumentFragment>
+`;
