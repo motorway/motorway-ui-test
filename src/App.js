@@ -5,7 +5,7 @@ const App = () => {
   const [images, setImages] = useState();
 
   useEffect(() => {
-    fetch('http://localhost:3001/images?limit=10')
+    fetch('images?limit=10')
       .then(res => res.json())
       .then(data => {
         console.log('Success:', data);
