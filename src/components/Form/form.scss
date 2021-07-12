@@ -1,0 +1,46 @@
+.form-group {
+  padding: 50px;
+  width: 50%;
+  margin: 0 auto;
+  button {
+    background-color: #E11F26;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    height: 48px;
+    margin-top: 45px;
+    width: 200px;
+  }
+  .input-group {
+    margin-top: 25px;
+    input {
+      background-color:#FFF;
+      border: none;
+      border-bottom: 1.5px solid #657e8d;
+      color: #3c5261;
+      font-size: 18px;
+      line-height: 24px;
+      padding: 7px 0px;
+      width: 100%;
+    }
+    input:focus {
+      outline: none;
+    }
+    label {
+      display: block;
+      margin-top: 25px;
+    }
+  }
+  .error {
+    font-size: 14px;
+    line-height: 20px;
+    color: #E11F26;
+  }
+  .success {
+    font-size: 25px;
+    line-height: 40px;
+    color: #1e7e34;
+  }
+}
