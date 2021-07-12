@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import Image from './components/Image/image';
+import Form from './components/Form/form';
+import './App.scss';
 
 const App = () => {
-  const [images, setImages] = useState();
+  const [images, setImages] = useState([]);
+  const [selectedImage, setSelectedImage] = useState();
 
   useEffect(() => {
     fetch('images?limit=10')
@@ -16,18 +19,41 @@ const App = () => {
       });
   }, []);
 
+  const openModal = (id) => {
+    const img = images.find((item) => item.id === id);
+
+    if (img) {
+      setSelectedImage(img);
+    }
+  };
+
+  const closeModal = () => {
+    setSelectedImage(undefined);
+  };
+
   return (
-    <div className='app'>
-      {
-        images && images.map(img => (
-          <div key={img.id} >
-            <img src={img.url} alt=''/>
-            <img src={img.user.profile_image} alt=''/>
-          </div>
-        ))
-      }
-    </div>
+    <>
+      <div className="container">
+        {images?.map((img, index) => (
+          <Image
+            {...img}
+            index={index + 1}
+            key={img.id + index}
+            onClick={openModal}
+          />
+        ))}
+      </div>
+
+      <Form />
+
+      {selectedImage ? (
+        <div className="modal">
+          <button className="modal-close" type="button" onClick={closeModal}>✖</button>
+          <img className="modal-img" src={selectedImage.url} alt={selectedImage.alt_description} />
+        </div>
+      ) : null}
+    </>
   );
-}
+};
 
 export default App;
