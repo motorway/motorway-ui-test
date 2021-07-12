@@ -1,0 +1,47 @@
+@import './../../styles/variables.scss';
+
+.picture {
+  position: relative;
+  margin: 5px;
+}
+
+.img-wrapper {
+  width: 300px;
+
+  img {
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  color: var(--white-color);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  z-index: 1;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  border: 1px solid var(--white-color);
+  border-radius: 50%;
+  display: block;
+  height: var(--avatar-size);
+  margin-right: 1em;
+  max-height: 300px;
+  width: var(--avatar-size);
+}
