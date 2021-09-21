@@ -1,10 +1,10 @@
 
 # Motorway UI Test
-  
+
 
 Welcome to the Motorway UI technical test. This test focuses on user experience, and your skills with HTML, CSS, a11y and leveraging browser APIs.
 
-  
+
 ## Set up
 
 This repo is a slightly modified Create React App and an Express server which serves a JSON feed of images.
@@ -32,7 +32,7 @@ Create a responsive UI to display the images returned by the API.
 
 The aim is to demonstrate your experience and knowledge of HTML, CSS, JS and React features; and demonstrate creative thinking in how images can be presented and manipulated.
 
-Images aren't optimised and their dimensions are varied, so you will need to take this into account.
+Images aren't optimised and their dimensions are varied, there are .jpg and .webp versions on s3, so you will need to take this into account.
 
 #### Inspiration:
 
@@ -56,7 +56,7 @@ The API that is returning images is rather slow. Show how it can be sped up, and
 
 ### 3. Forms
 
-One of the oldest yet trickiest parts of web development is forms, so we’d like to see how you handle them. 
+One of the oldest yet trickiest parts of web development is forms, so we’d like to see how you handle them.
 
 Add a form to your app with the following fields. The form doesn't need to submit to anywhere, but must validate on the client.
 
