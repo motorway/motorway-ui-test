@@ -1,0 +1,41 @@
+.modal-window {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, 0.7);
+  transition: all ease 0.4s;
+}
+
+.modal__content {
+  border-radius: 4px;
+  position: relative;
+  max-width: 45rem;
+  max-height: 32rem;
+  background: #fff;
+  padding: 2em 2em;
+  padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .modal__content {
+    border-radius: 4px;
+    position: relative;
+    max-width: 45rem;
+    max-height: 32rem;
+    background: #fff;
+    padding: 1em 1em;
+    padding-top: 0;
+  }
+}
+
+.modal__header {
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
