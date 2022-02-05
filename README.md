@@ -21,7 +21,7 @@ The gallery takes the whole viewport and allows to view full images one by one. 
 
 The masonry layout shows all the images in one place in a nice way.
 
-The form presents and validates required fields, see the [Form section](#3.-forms) section below for more info.
+The form presents and validates required fields, see the [Form section](#forms) section below for more info.
 
 The layout is responsive in its MVP-style way.
 
@@ -60,7 +60,7 @@ In my past projects forms were already set up, so this time has been the first o
 
 As far as I know, modern React applications rarely use vanilla HTML forms, so, to reduce boilerplate and gain some real-world experience at the same time, I decided to use an npm package.
 
-I chose one of the most popular packages, Formik v2, as it's pretty lightweight, versatile, and does little magic. I decided not to go with the most concise but abstract variation of its API (<Formik /> HOC), in favor of the more explicit one (with render props and hooks) to get my hands dirty in the process.
+I chose one of the most popular packages, Formik v2, as it's pretty lightweight, versatile, and does little magic. I decided not to go with the most concise and abstract HOC-based variation of its API, in favor of the more explicit one (with render props and hooks) to get my hands dirty in the process.
 
 ## Packages used
 
@@ -83,6 +83,8 @@ The whole thing took about 1.5 work days, in proportion of 5/10 parts styling, 3
 - Implement lazy loading and fetching additional images on top of starting 10.
 - Implement loading indicators for async actions.
 - Implement error boundaries and layout error state views.
+- Save current form state to local storage or as a url query to preserve on page refresh.
+- Add routing to allow to jump straight into the gallery.
 - Introduce css-modules or css-in-js to remove BEM-style verbose classnames.
 - Extract basic UI components and their styles.
 - Work on layouts for different viewports (though it's more of a designer's field of expertise).
