@@ -1,8 +1,105 @@
+# Comments from the author (Aleksei Iurchak)
+
+This readme includes:
+
+- [Notes and disclaimers by task](#notes-and-disclaimers-by-task)
+    - [UI development](#ui-development)
+    - [Performance](#performance)
+    - [Forms](#forms)
+- [Packages used](#packages-used)
+- [Time spent](#time-spent)
+- [Further development ideas](#further-development-ideas)
+- [Wrap-up](#wrap-up)
+
+Project consists of a single page with a jumbotron banner, a form with validation, a slide-show and a masonry with all the photos, and a modal gallery.
+
+The banner is just a picture to quick start somewhere.
+
+The slide-show component shows all the photos one by one and allows to open the currently shown photo in the gallery.
+
+The gallery takes the whole viewport and allows to view full images one by one. Navigation is available via UI elements or keyboard arrow keys.
+
+The masonry layout shows all the images in one place in a nice way.
+
+The form presents and validates required fields, see the [Form section](#3.-forms) section below for more info.
+
+The layout is responsive in its MVP-style way.
+
+P.S. sorry about the single commit, I had to squash while figuring out the best way to upload results.
+
+## Notes and disclaimers by task
+
+### UI development
+
+In absense of mockups or functional requirements I tried to come up with a design that would enable me to demonstrate the typical way I'm working on frontend tasks.
+
+As there aren't multiple instances of usage of sample components, I didn't try to extract logic or layouts into standalone reusable components, although I understand it's a regular practice.
+
+I didn't set a goal to create a proper design system, so breakpoints and scaling of paddings and font sizes are somewhat arbitrary, please excuse me for that.
+
+As production-level quality wasn't a requirement, I didn't spend a lot of time refactoring and working on project folder structure apart from basic things - I hope you understand :)
+
+### Performance
+Performance (especially server-side) is one of the things I haven't really had a chance to work on in my past projects. 
+
+The things I did performance-wise in the past were monitoring function complexity, avoiding redundant re-renders, splitting code into chunks and preloading them, and paying attention to how much data, including media and its resolution, is actually needed in different parts of a project. 
+
+Because the result is a single little page with one set of images, there was no point in splitting code, there also aren't any complex computations. As for image resolution, I coudn't figure out if the provided resources support loading lower-resolution images to display them while the full ones are loading.
+
+So, in the end, I was puzzled about what could be done performance-wise.
+
+Increasing competency in performance is one of the main goals of mine for the near future.
+
+### Forms
+
+Ah, the most fun part! 
+
+In my past projects forms were already set up, so this time has been the first one in a long time that I created a form from scratch.
+
+Modern React applications rarely use default HTML forms by themselves, so, to gain some real-world experience in the process, I decided to use a package to reduce handler and field validation boilerplate.
+
+I chose one of the most popular packages, Formik v2, as it's pretty lightweight, versatile, and does little magic. I decided to go not with the most concise but abstract variation of its API (<Formik /> HOC), but one level more down-to-earth (render props and hooks) to get my hands dirty in the process.
+
+## Packages used
+
+* formik (https://www.npmjs.com/package/formik), explained above.
+
+* react-datepicker (https://www.npmjs.com/package/react-datepicker) as it's basic and eliminates the need to implement an in-house datepicker, which I figured was outside of scope of the task.
+
+* react-color (https://www.npmjs.com/package/react-color) for the same reasons and to avoid writing a simple and boring select with color names.
+
+* react-masonry-css (https://www.npmjs.com/package/react-masonry-css). I wanted to spare some time from css grids to work on more complex things, so I turned to a masonry package. I compared top 5 of them and ended up with this one, because it didn't depend on legacy packages and had the most straightforward API. I was surprised to find that the author of one of them is my friend from university, so I had a chance to discuss pros and cons of alternative packages.
+ 
+
+## Time spent
+
+To create enough opportunities to use React, JS, CSS and HTML in their different ways, I planned several features for the page. That required a lot of styling to end up with a minimally aesthetically pleasing result. I also did quite a bit of research in the process, 
+
+The whole thing took about 1.5 work days, in proportion of 5/10 parts styling, 3/10 parts researching, and 2/10 parts actually coding, which, I hope, doesn't violate the recommendation too much.
+
+## Further development ideas
+- Add Typescript.
+- Figure out endpoints and implement loading lower-resolution images.
+- Implement lazy loading and fetching additional images on top of starting 10.
+- Implement loading indicators for async actions.
+- Implement error boundaries and layout error state views.
+- Extract basic UI components and their styles.
+- Work on layouts for different viewports (though it's more of a designer's sphere of competence).
+- Extract style constants and variables.
+
+## Wrap-up
+
+Thank you for the task and your consideration of the result! 
+
+Working on it was as fun as it was educational.
+
+Here goes the initial Readme.
+
 
 # Motorway UI Test
 
-
 Welcome to the Motorway UI technical test. This test focuses on user experience, and your skills with HTML, CSS, a11y and leveraging browser APIs.
+
 
 
 ## Set up
