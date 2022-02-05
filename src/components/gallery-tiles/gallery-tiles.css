@@ -20,6 +20,6 @@
   transition: transform 200ms;
 }
 
-.img:hover {
+.gallery-tiles__image:hover {
   transform: scale(1.04);
 }

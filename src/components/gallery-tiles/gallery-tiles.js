@@ -24,7 +24,7 @@ const GalleryTiles = ({ images, onClick }) => {
             <img
               className="gallery-tiles__image"
               src={`${img.url}.jpg`}
-              alt=""
+              alt={img.alt_description}
             />
           </div>
         ))}
