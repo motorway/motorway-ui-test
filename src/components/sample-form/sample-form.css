@@ -1,0 +1,73 @@
+.sample-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sample-form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.sample-form__field:not(:first-child) {
+  margin-top: 24px;
+}
+
+.sample-form__label {
+  margin-bottom: 8px;
+}
+
+.sample-form__error {
+  margin-top: 8px;
+  color: red;
+}
+
+.sample-form__input {
+  height: 32px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+
+.sample-form__input--color {
+  width: 25%;
+}
+
+.sample-form__input--range {
+  padding: 0;
+  height: 24px;
+}
+
+.sample-form__input--error {
+  border: 1px solid red;
+}
+
+.sample-form__salary-range-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sample-form__salary-value {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.sample-form__submit {
+  margin-top: 32px;
+  padding: 8px;
+  user-select: none;
+  border: none;
+  border-radius: 4px;
+  background-color: #1877f2;
+  color: white;
+  font-weight: bold;
+}
+
+.sample-form__submit:hover {
+  background-color: #025cc8;
+}

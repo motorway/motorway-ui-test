@@ -1,0 +1,58 @@
+.app {
+  width: 100vw;
+  height: 100%;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+.main {
+  display: flex;
+  padding: 40px 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+}
+
+.form,
+.gallery-preview {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.form {
+  /* height: 600px; */
+  padding: 20px;
+
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+.gallery-preview {
+  height: 400px;
+}
+
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+}
+
+.loading-state {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
