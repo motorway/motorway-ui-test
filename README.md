@@ -66,8 +66,6 @@ I chose one of the most popular packages, Formik v2, as it's pretty lightweight,
 
 * react-datepicker (https://www.npmjs.com/package/react-datepicker) as it's basic and eliminates the need to implement an in-house datepicker, which I figured was outside of scope of the task.
 
-* react-color (https://www.npmjs.com/package/react-color) for the same reasons and to avoid writing a simple and boring select with color names.
-
 * react-masonry-css (https://www.npmjs.com/package/react-masonry-css). I wanted to spare some time from css grids to work on more complex things, so I turned to a masonry package. I compared top 5 of them and ended up with this one, because it didn't depend on legacy packages and had the most straightforward API. I was surprised to find that the author of one of them is my friend from university, so I had a chance to discuss pros and cons of alternative packages.
  
 
