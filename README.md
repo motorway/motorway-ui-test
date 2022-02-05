@@ -25,6 +25,8 @@ The form presents and validates required fields, see the [Form section](#3.-form
 
 The layout is responsive in its MVP-style way.
 
+I developed and tested the application in desktop Chrome via responsive mode in devtools. I left mobile-platform-specific things like scrollbars and toolbars taking space outside of scope.
+
 P.S. sorry about the single commit, I had to squash while figuring out the best way to upload results.
 
 ## Notes and disclaimers by task
@@ -44,11 +46,11 @@ Performance (especially server-side) is one of the things I haven't really had a
 
 The things I did performance-wise in the past were monitoring function complexity, avoiding redundant re-renders, splitting code into chunks and preloading them, and paying attention to how much data, including media and its resolution, is actually needed in different parts of a project. 
 
-Because the result is a single little page with one set of images, there was no point in splitting code, there also aren't any complex computations. As for image resolution, I coudn't figure out if the provided resources support loading lower-resolution images to display them while the full ones are loading.
+Because the result is a single little page with one set of images, there was no point in splitting code, there also aren't any complex computations. As for image resolution, I coudn't figure out if the provided resources support loading lower-resolution images to display while the full ones are loading.
 
 So, in the end, I was puzzled about what could be done performance-wise.
 
-Increasing competency in performance is one of the main goals of mine for the near future.
+Increasing expertise in performance is one of the main goals of mine for the near future.
 
 ### Forms
 
@@ -56,9 +58,9 @@ Ah, the most fun part!
 
 In my past projects forms were already set up, so this time has been the first one in a long time that I created a form from scratch.
 
-Modern React applications rarely use default HTML forms by themselves, so, to gain some real-world experience in the process, I decided to use a package to reduce handler and field validation boilerplate.
+As far as I know, modern React applications rarely use vanilla HTML forms, so, to reduce boilerplate and gain some real-world experience at the same time, I decided to use an npm package.
 
-I chose one of the most popular packages, Formik v2, as it's pretty lightweight, versatile, and does little magic. I decided to go not with the most concise but abstract variation of its API (<Formik /> HOC), but one level more down-to-earth (render props and hooks) to get my hands dirty in the process.
+I chose one of the most popular packages, Formik v2, as it's pretty lightweight, versatile, and does little magic. I decided not to go with the most concise but abstract variation of its API (<Formik /> HOC), in favor of the more explicit one (with render props and hooks) to get my hands dirty in the process.
 
 ## Packages used
 
@@ -66,14 +68,14 @@ I chose one of the most popular packages, Formik v2, as it's pretty lightweight,
 
 * react-datepicker (https://www.npmjs.com/package/react-datepicker) as it's basic and eliminates the need to implement an in-house datepicker, which I figured was outside of scope of the task.
 
-* react-masonry-css (https://www.npmjs.com/package/react-masonry-css). I wanted to spare some time from css grids to work on more complex things, so I turned to a masonry package. I compared top 5 of them and ended up with this one, because it didn't depend on legacy packages and had the most straightforward API. I was surprised to find that the author of one of them is my friend from university, so I had a chance to discuss pros and cons of alternative packages.
+* react-masonry-css (https://www.npmjs.com/package/react-masonry-css). I wanted to spare some time from css grids to work on more complex things, so I turned to a masonry package. I compared top 5 of them and ended up with this one, because it didn't depend on legacy packages and had the most straightforward API. I was surprised to find out that the author of one of them is my friend from university, so I had a chance to discuss pros and cons of alternative packages.
  
 
 ## Time spent
 
-To create enough opportunities to use React, JS, CSS and HTML in their different ways, I planned several features for the page. That required a lot of styling to end up with a minimally aesthetically pleasing result. I also did quite a bit of research in the process, 
+To create enough opportunities to use React, JS, CSS and HTML in their different ways, I planned several features for the page. That required a lot of styling to end up with a minimally aesthetically pleasing result. I also did quite a bit of research in the process.
 
-The whole thing took about 1.5 work days, in proportion of 5/10 parts styling, 3/10 parts researching, and 2/10 parts actually coding, which, I hope, doesn't violate the recommendation too much.
+The whole thing took about 1.5 work days, in proportion of 5/10 parts styling, 3/10 parts researching, and 2/10 parts actually coding, which, I hope, doesn't violate the time limit recommendation too much.
 
 ## Further development ideas
 - Add Typescript.
@@ -81,8 +83,9 @@ The whole thing took about 1.5 work days, in proportion of 5/10 parts styling, 3
 - Implement lazy loading and fetching additional images on top of starting 10.
 - Implement loading indicators for async actions.
 - Implement error boundaries and layout error state views.
+- Introduce css-modules or css-in-js to remove BEM-style verbose classnames.
 - Extract basic UI components and their styles.
-- Work on layouts for different viewports (though it's more of a designer's sphere of competence).
+- Work on layouts for different viewports (though it's more of a designer's field of expertise).
 - Extract style constants and variables.
 
 ## Wrap-up
