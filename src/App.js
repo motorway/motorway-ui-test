@@ -42,13 +42,11 @@ const App = () => {
         ) : (
           <>
             <div className="banner">
-              {images ? (
-                <Banner
-                  image={images[0]}
-                  title="Car Images"
-                  subtitle="By Aleksei Iurchak"
-                />
-              ) : null}
+              <Banner
+                image={images[0]}
+                title="Car Images"
+                subtitle="By Aleksei Iurchak"
+              />
             </div>
 
             <div className="main">
@@ -57,19 +55,15 @@ const App = () => {
               </div>
 
               <div className="gallery-preview" onClick={toggleModal}>
-                {images ? (
-                  <GalleryPreview
-                    images={images}
-                    onClick={setCurrentPreviewIndex}
-                  />
-                ) : null}
+                <GalleryPreview
+                  images={images}
+                  onClick={setCurrentPreviewIndex}
+                />
               </div>
             </div>
 
             <div className="masonry">
-              {images ? (
-                <GalleryTiles images={images} onClick={onTileClick} />
-              ) : null}
+              <GalleryTiles images={images} onClick={onTileClick} />
             </div>
 
             <Modal isOpen={isModalOpen} onClose={toggleModal}>
