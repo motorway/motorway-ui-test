@@ -1,0 +1,239 @@
+
+body {
+  padding: 0;
+  margin: 0;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.user-name {
+  font-size: 1.1rem;
+}
+.cards-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.Card{
+  width: 300px;
+  height:520px;
+  background: white;
+  border-radius:10px;
+  box-shadow:0px 1px 10px 1px black;
+  overflow: hidden;
+  
+}
+.card-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+img{
+  border: 2px solid #8e00b9;
+}
+
+.lower-container{
+  margin-top: 60px;
+  height: 300px;
+  background: white;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.lower-container h3,h4,p{
+  margin: 0;
+  padding: 0;
+}
+
+.lower-container h3{
+  color: #2f2d2e;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.lower-container h4{
+  color: #8e00b9;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.lower-container p{
+  margin: 1rem;
+  font-weight: 300;
+  color: #2f2d2e;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+button{
+  margin: 1rem;
+  margin-top: 10;
+  color: #2f2d2e;
+  font: bold;
+  background-color: white;
+  border: 2px solid #8e00b9;
+  padding: 0.6rem;
+  border-radius: 6px;
+  animation: ease-in-out;
+}
+
+button:hover{
+  background-image:linear-gradient(to left, #2d00f7, #ff0291);
+  border: none;
+  color: white;
+}
+
+.hover-animation {
+  position: relative;
+  height: 350px;
+  width: 350px;
+  height: 100px;
+  background: linear-gradient(to left, #2d00f7, #ff0291)
+}
+
+.img-back, .img-front:hover {
+  width: 250px;
+  height: 250px;
+  transform: translate(20px, 0px);
+  border: #121619;
+}
+
+.hover-animation img {
+  background: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: translate(95px, 45px);
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+.hover-animation img.img-front:hover{
+  opacity:0;
+  cursor: pointer;
+}
+
+body { background:rgb(215, 215, 231); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:rgb(60, 55, 55);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 0px;
+  margin-bottom: 0px;
+  width:500px;
+  box-sizing: border-box;
+  outline:0;
+}
+.sign-up{
+  padding-top: 15px;
+}
+.feedback-input:focus { border:2px solid #CC4949; }
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+
+
+/* Contact */
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* text-align:center; */
+}
+
+/* .contact .leftSide {
+  height: 100%;
+  flex: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align:center;
+} */
+
+.contact .rightSide {
+  height: 100%;
+  width: 10px;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .rightSide h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 10;
+  font-size: 50px;
+  margin-left: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 30px;
+}
+
+form input {
+  height: 40px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #121619;
+  color: black;
+}
+
+form textarea {
+  margin-top: 15px;
+  height: 70px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #121619;
+  color: black;
+}
+input::placeholder,
+textarea::placeholder {
+  font-weight: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form label {
+  margin-top: 15px;
+  color: grey;
+}
