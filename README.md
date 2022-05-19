@@ -2,7 +2,7 @@
 
 Welcome to the Motorway UI technical test. This test focuses on user experience, and your skills with HTML, CSS, a11y and leveraging browser APIs.
 # Motorway UI Test 
-Here is how the card looks like you can hover the picture to inlarge it.
+Here is how the card looks like and you can hover over the picture to inlarge it.
 ![](cardimg.png)
 
 ## Overview
