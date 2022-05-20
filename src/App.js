@@ -8,13 +8,9 @@ const App = () => {
   const [images, setImages] = useState();
 
   useEffect(() => {
-    let initialTime = new Date();
     fetch("images?limit=10")
       .then((res) => res.json())
       .then((data) => {
-        console.log(
-          "API: " + (new Date() - initialTime) + "ms"
-        );
         setImages(data);
       })
       .catch((error) => {
