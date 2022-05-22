@@ -1,7 +1,7 @@
 import cn from "classnames";
 import styles from "./Card.module.css";
 
-const Card = ({ img, view }) => {
+const Card = ({ img, view, onCardClick }) => {
   const getClassName = () => {
     if (view === "Grid") {
       return "card_grid";
@@ -9,8 +9,16 @@ const Card = ({ img, view }) => {
     return "card_gallery";
   };
 
+  const handleCardClick = () => {
+    onCardClick(img.description, img.alt_description, img.url, img.user.name);
+  };
+
   return (
-    <li key={img.id} className={cn(styles.card, styles[getClassName()])}>
+    <li
+      key={img.id}
+      onClick={handleCardClick}
+      className={cn(styles.card, styles[getClassName()])}
+    >
       <div className={styles["card-image__container"]}>
         <img
           src={`${img.url}.jpg`}
