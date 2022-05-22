@@ -61,6 +61,11 @@ The loading performace is slowed down by the setTimeout that returns a response 
 Once the timeout is removed, performance is sped up.
 Improvement in performance can be measured by checking the time in ms from the moment a request is sent to the servert to the moment a response was returned from the server.
 
+#### Further plans:
+
+1. Add lazy loading
+2. Add preloader showing loading progress
+
 ### 3. Forms
 
 One of the oldest yet trickiest parts of web development is forms, so we’d like to see how you handle them.
