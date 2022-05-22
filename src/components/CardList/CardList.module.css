@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.card-list__grid {
+  margin: 0;
+  padding: 50px 0 50px;
+  display: grid;
+  grid-gap: 30px 30px;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 360px));
+  justify-content: center;
+}
+
+.card-list__slide {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 25px 0;
+  list-style: none;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 767px) {
+  .card-list__grid {
+    padding: 30px 0 30px;
+    grid-gap: 10px 10px;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 280px));
+  }
+}

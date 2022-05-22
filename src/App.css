@@ -1,0 +1,40 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  margin: 0, auto;
+  padding: 40px 0;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.style {
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 5px 10px;
+  background-color: #edecec;
+  box-shadow: 0 0 1px #edecec, 0 1px 2px #edecec, 0 1px 2px #edecec;
+  border-radius: 5px;
+  transition: all linear 0.3s;
+  width: 100%;
+}
+
+.style:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
