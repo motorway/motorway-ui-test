@@ -65,6 +65,7 @@ Improvement in performance can be measured by checking the time in ms from the m
 
 1. Add lazy loading
 2. Add preloader showing loading progress
+3. Add unit and integrations tests
 
 ### 3. Forms
 
