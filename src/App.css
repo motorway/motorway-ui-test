@@ -38,3 +38,12 @@
   cursor: pointer;
   opacity: 0.6;
 }
+
+.form__section {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}

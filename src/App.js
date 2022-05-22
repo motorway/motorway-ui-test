@@ -3,6 +3,7 @@ import "./App.css";
 import "./components/CardList/CardList";
 import CardList from "./components/CardList/CardList";
 import Modal from "./components/Modal/Modal";
+import Form from "./components/Form/Form";
 
 const App = () => {
   const [images, setImages] = useState();
@@ -46,6 +47,10 @@ const App = () => {
     setIsModalOpen(true);
   };
 
+  const handleFormSubmit = (form) => {
+    console.log("Submitted form:", form);
+  };
+
   return (
     <div className='page'>
       <div className='app'>
@@ -64,6 +69,9 @@ const App = () => {
             cardId={selectedCard}
           />
         )}
+        <section className='form__section'>
+          <Form onSubmit={handleFormSubmit} />
+        </section>
       </div>
     </div>
   );
