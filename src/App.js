@@ -1,33 +1,48 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Modal from "react-modal";
+import style from './App.module.css';
+import Form from "./components/Form/Form";
+import { Gallery } from "./components/Grid/Gallery";
+
 
 const App = () => {
   const [images, setImages] = useState();
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const setModalIsOpenToTrue = () => {
+    setModalIsOpen(true);
+  };
+
+  const setModalIsOpenToFalse = () => {
+    setModalIsOpen(false);
+  };
 
   useEffect(() => {
-    fetch('images?limit=10')
-      .then(res => res.json())
-      .then(data => {
-        console.log('Success:', data);
+    fetch("images?limit=10")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Success:", data);
         setImages(data);
       })
-      .catch(error => {
-        console.error('Error:', error);
+      .catch((error) => {
+        console.error("Error:", error);
       });
   }, []);
 
   return (
-    <div className='app'>
-      {
-        images && images.map(img => (
-          <div key={img.id} >
-            <img src={`${img.url}.jpg`} alt=''/>
-            <img src={`${img.user.profile_image}.webp`} alt=''/>
-          </div>
-        ))
-      }
-    </div>
+    <React.Fragment>
+      <button className={style['modalButton']} onClick={setModalIsOpenToTrue}>View Form</button>
+      <Modal isOpen={modalIsOpen}>
+        <button className={style['modalButton']} onClick={setModalIsOpenToFalse}>x</button>
+        <Form />
+      </Modal>
+
+      <div>
+      <Gallery images={images} />     
+      </div>
+
+          </React.Fragment>
   );
-}
+};
 
 export default App;

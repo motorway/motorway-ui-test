@@ -1,0 +1,10 @@
+.modalButton {
+  background-color: #b9c427;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 20px 0px;
+  padding: 5px;
+  border-radius: 4px;
+  border: #b9c427;
+}
