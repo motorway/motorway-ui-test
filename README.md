@@ -26,7 +26,13 @@ After this, CRA will open a tab with the app running, usually `localhost:3000`. 
 
 ## Tasks
 
-There are two stages to this task, if doing a live challenge for the hour, the first one should be achievable. If doing the take home test we appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks.
+There are two stages to this task depending on the type of challenge you're taking.
+
+#### Live challenge for an hour
+Task one.
+
+#### Take home challenge for two hours
+Task one and attempt task two. We appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks. Focusing on one small thing well or a bigger scope as a proof of concept, both approaches are valid. 
 
 ### 1. Realtime search
 We have an api endpoint at `http://localhost:3001/images?limit=10` which returns a series of results in the format:
@@ -61,6 +67,16 @@ We have an api endpoint at `http://localhost:3001/images?limit=10` which returns
     ...
 ]
 ```
+#### Outcomes
+To have a type ahead search functionality like Google omnibox which can query the above API and return selectable results. 
+- You can filter by any key you feel is appropriate
+- Performant fast results
+- The dataset is static but **assuming** it could be dynamic would be beneficial
+- **Not exposing the whole dataset** would be beneficial 
+
+### 2. Realtime search results
+Once task one has been completed, when a user selects a result display the result in some UI. The more interesting or unique the better, examples could be but not limited too a11y, animation, image optimization, semantic markup, schemas, WebGL. _Again, we appreciate that all of them can't be achieved in two hours and we don't expect to you to cover most of them, let alone all of them._
+
 
 
 ## Notes
