@@ -26,50 +26,41 @@ After this, CRA will open a tab with the app running, usually `localhost:3000`. 
 
 ## Tasks
 
-### 1. UI development
+There are two stages to this task, if doing a live challenge for the hour, the first one should be achievable. If doing the take home test we appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks.
 
-Create a responsive UI to display the images returned by the API.
+### 1. Realtime search
+We have an api endpoint at `http://localhost:3001/images?limit=10` which returns a series of results in the format:
 
-The aim is to demonstrate your experience and knowledge of HTML, CSS, JS and React features; and demonstrate creative thinking in how images can be presented and manipulated.
-
-Images aren't optimised and their dimensions are varied, there are .jpg and .webp versions on s3, so you will need to take this into account.
-
-#### Inspiration:
-
-https://twitter.com/andybarefoot/status/1251844621262602242
-
-http://www.artist-developer.com/
-
-#### Some ideas to get you started:
-
-Resizable thumbnails
-
-Modal to review full size images
-
-Image effects or filters
-
-
-### 2. Performance
-
-The API that is returning images is rather slow. Show how it can be sped up, and show how you would measure the improvement in performance.
-
-
-### 3. Forms
-
-One of the oldest yet trickiest parts of web development is forms, so we’d like to see how you handle them.
-
-Add a form to your app with the following fields. The form doesn't need to submit to anywhere, but must validate on the client.
-
-- [ ] Name
-- [ ] Email
-- [ ] Date of birth
-- [ ] Favourite colour
-- [ ] Salary (using a range input)
-
-
-## Time allowed
-
-We appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks.
+```
+[
+    {
+        "id": "m3m-lnR90uM",
+        "created_at": "2017-04-14T00:59:12-04:00",
+        "updated_at": "2020-04-14T01:05:34-04:00",
+        "color": "#E0E4EF",
+        "description": "I shot this while doing a job for a luxury automotive storage facility in Baltimore, MD. I wanted to create an ominous sense of intrigue, giving the feeling of a space that was both expansive and enclosed. I enjoy the journey my eyes take from the focal point of the headlamps to the contours of the Camero’s body, and then to the backdrop of stacked automobiles.",
+        "alt_description": "white car",
+        "categories": [],
+        "likes": 995,
+        "user": {
+            "id": "9aTMQdp_Djo",
+            "updated_at": "2020-04-20T01:34:56-04:00",
+            "username": "peterbroomfield",
+            "name": "Peter Broomfield",
+            "first_name": "Peter",
+            "last_name": "Broomfield",
+            "bio": "Some days you get the bear, and some days the bear gets you. Maybe if we felt any human loss as keenly as we feel one of those close to us, human history would be far less bloody.",
+            "location": "Baltimore, MD",
+            "profile_image": "https://motorway-ui-test.s3.eu-west-2.amazonaws.com/avatars/warmachine",
+            "total_collections": 36,
+            "total_likes": 126,
+            "total_photos": 1
+        },
+        "url": "https://motorway-ui-test.s3.eu-west-2.amazonaws.com/car-images/m3m-lnR90uM"
+    }
+    ...
+]
+```
 
 
 ## Notes
