@@ -28,11 +28,11 @@ After this, CRA will open a tab with the app running, usually `localhost:3000`. 
 
 There are two stages to this task depending on the type of challenge you're taking.
 
-#### Live challenge for an hour
-Task one.
+#### Live challenge (1 hour)
+[Task one](#1-realtime-search).
 
-#### Take home challenge for two hours
-Task one and attempt task two. We appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks. Focusing on one small thing well or a bigger scope as a proof of concept, both approaches are valid. 
+#### Take home challenge (2 hours)
+Task one and attempt [task two](#2-realtime-search-results). We appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks. Focusing on one small thing well or a bigger scope as a proof of concept, both approaches are valid. 
 
 ### 1. Realtime search
 We have an api endpoint at `http://localhost:3001/images?limit=10` which returns a series of results in the format:
