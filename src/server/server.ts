@@ -2,7 +2,7 @@ import express, { json, Request } from "express";
 import cors from "cors";
 
 import images from './data/images.json' assert { type: 'json' };
-import { getFilteredTags, getAllTags } from "./server.helpers.js";
+import { getFilteredTags, getAllTags } from "./server.helpers";
 
 interface Tags {
   tag: string;
@@ -26,9 +26,14 @@ app.get('/api/images', ({ query }, res) => {
   res.json(images);
 });
 
-app.get('/api/tags', ({ query }:  Request<{}, {}, {}, Tags>, res) => {
+app.get('/api/tags', ({ query }:  Request<{}, {}, {}, Tags>, res): string[] => {
   const { tag: queryTag } = query;
   const tags = getFilteredTags(allTags, queryTag);
+
+  if (tags.length === 0) {
+    res.json(["No Results"]);
+    return;
+  }
 
   res.json(tags);
 });

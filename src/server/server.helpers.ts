@@ -1,4 +1,4 @@
-import { ImageDTO, Tags } from "../types.js";
+import { ImageDTO, Tags } from "../types";
 
 const getImagesTags = (images: ImageDTO[]) => images.map(image => image.tags).flat();
 
