@@ -1,37 +1,32 @@
 {
-  "name": "fe-test",
-  "version": "0.1.0",
+  "name": "motorway-ui-test",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "5.16.2",
-    "@testing-library/react": "12.1.2",
-    "@testing-library/user-event": "13.5.0",
-    "nodemon": "^2.0.15",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-scripts": "5.0.0"
-  },
-  "proxy": "http://localhost:5000/",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "serve": "nodemon server.js --watch server.js --watch src/images.json"
+    "dev": "run-p --race frontend backend",
+    "frontend": "vite",
+    "backend": "npm run backend:node-options nodemon ./src/server/server.ts",
+    "backend:node-options": "NODE_OPTIONS='--experimental-json-modules --es-module-specifier-resolution=node --loader ts-node/esm'",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "nodemon": "^2.0.21",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
   }
 }
