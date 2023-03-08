@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "module": "NodeNext",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+  },
+  "include": [
+    "vite.config.ts",
+    "src/server/**/*",
+    "src/server/data/images.json", "src/types.d.ts",
+  ]
+}
