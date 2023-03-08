@@ -9,11 +9,11 @@ export const getAllTags = (cars: CarDTO[]) => {
   return getUniqueTags(tagsByCar);
 } 
 
-export const getFilteredTags = (tags: Tags, queryTag: string) => {
-  if (!queryTag) {
+export const getFilteredTags = (tags: Tags, tagFromQuery: string) => {
+  if (!tagFromQuery) {
     return tags;
   }
-  return tags.filter((tag) => tag.includes(queryTag.toString()))
+  return tags.filter((tag) => tag.startsWith(tagFromQuery));
 }
 
 export const getCarsByTag = (tag: string, cars: CarDTO[]) => cars.filter((car) => car.tags.includes(tag));
