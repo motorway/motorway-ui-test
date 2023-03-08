@@ -1,12 +1,12 @@
-import { ImageDTO, Tags } from "../types";
+import { CarDTO, Tags } from "../types";
 
-const getImagesTags = (images: ImageDTO[]) => images.map(image => image.tags).flat();
+const getAllTagsByCars = (cars: CarDTO[]) => cars.map(car => car.tags).flat();
 
-const getUniqueTags = (tagsByImage: Tags) => Array.from(new Set(tagsByImage));
+const getUniqueTags = (tagsByCar: Tags) => Array.from(new Set(tagsByCar));
 
-export const getAllTags = (images: ImageDTO[]) => {
-  const tagsByImage = getImagesTags(images);
-  return getUniqueTags(tagsByImage);
+export const getAllTags = (cars: CarDTO[]) => {
+  const tagsByCar = getAllTagsByCars(cars);
+  return getUniqueTags(tagsByCar);
 } 
 
 export const getFilteredTags = (tags: Tags, queryTag: string) => {
@@ -15,3 +15,5 @@ export const getFilteredTags = (tags: Tags, queryTag: string) => {
   }
   return tags.filter((tag) => tag.includes(queryTag.toString()))
 }
+
+export const getCarsByTag = (tag: string, cars: CarDTO[]) => cars.filter((car) => car.tags.includes(tag));

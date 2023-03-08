@@ -1,17 +1,17 @@
 import express, { json, Request } from "express";
 import cors from "cors";
 
-import images from './data/images.json' assert { type: 'json' };
-import { getFilteredTags, getAllTags } from "./server.helpers";
+import cars from './data/cars.json' assert { type: 'json' };
+import { getFilteredTags, getAllTags, getCarsByTag } from "./server.helpers";
 
-interface Tags {
+interface Query {
   tag: string;
 }
 
 const port = 8000;
 const feApp = 'http://127.0.0.1:5173';
 
-const allTags = getAllTags(images);
+const allTags = getAllTags(cars);
 
 const corsOptions = {
   origin: feApp,
@@ -21,14 +21,16 @@ const corsOptions = {
 const app = express();
 app.use(cors(corsOptions));
 
-app.get('/api/images', ({ query }, res) => {
-  console.log('query images', query?.input)
-  res.json(images);
+app.get('/api/cars', ({ query }: Request<{}, {}, {}, Query>, res) => {
+  const { tag } = query;
+  const carsByTag = getCarsByTag(tag, cars);
+
+  res.json(carsByTag);
 });
 
-app.get('/api/tags', ({ query }:  Request<{}, {}, {}, Tags>, res): string[] => {
-  const { tag: queryTag } = query;
-  const tags = getFilteredTags(allTags, queryTag);
+app.get('/api/tags', ({ query }:  Request<{}, {}, {}, Query>, res): string[] => {
+  const { tag } = query;
+  const tags = getFilteredTags(allTags, tag);
 
   if (tags.length === 0) {
     res.json(["No Results"]);

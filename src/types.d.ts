@@ -1,6 +1,6 @@
 export type Tags = string[];
 
-export interface ImageDTO {
+export interface CarDTO {
   id: string;
   created_at: string;
   updated_at: string;
@@ -10,19 +10,6 @@ export interface ImageDTO {
   tags: Tags;
   likes: number;
   user: UserDTO;
-  url: string;
-}
-
-export interface Image {
-  id: string;
-  createdAt: Date;
-  updatedAt: Date;
-  color: string;
-  description: null | string;
-  altDescription: string;
-  tags: string[];
-  likes: number;
-  user: User;
   url: string;
 }
 
@@ -39,6 +26,19 @@ export interface UserDTO {
   total_collections: number;
   total_likes: number;
   total_photos: number;
+}
+
+export interface Car {
+  id: string;
+  createdAt: Date;
+  updatedAt: Date;
+  color: string;
+  description: null | string;
+  altDescription: string;
+  tags: string[];
+  likes: number;
+  user: User;
+  url: string;
 }
 
 export interface User {
