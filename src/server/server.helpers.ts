@@ -16,4 +16,10 @@ export const getFilteredTags = (tags: Tags, tagFromQuery: string) => {
   return tags.filter((tag) => tag.startsWith(tagFromQuery));
 }
 
-export const getCarsByTag = (tag: string, cars: CarDTO[]) => cars.filter((car) => car.tags.includes(tag));
+export const getCarsByTag = (tag: string, cars: CarDTO[]) => {
+  if (!tag) {
+    return cars;
+  }
+
+  return cars.filter((car) => car.tags.includes(tag))
+};
