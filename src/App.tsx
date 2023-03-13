@@ -11,7 +11,7 @@ import './App.css'
  * http://localhost:8000/api/cars?tag=ferrari - to return matching cars
  */
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <h1>Motorway UI challenge</h1>
