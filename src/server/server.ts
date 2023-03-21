@@ -9,17 +9,15 @@ interface Query {
 }
 
 const port = 8000;
-const feApp = 'http://127.0.0.1:5173';
 
 const allTags = getAllTags(cars);
 
-const corsOptions = {
-  origin: feApp,
-  optionsSuccessStatus: 200,
-};
-
 const app = express();
-app.use(cors(corsOptions));
+
+app.use(cors({
+  optionsSuccessStatus: 200,
+  origin: ['http://127.0.0.1:5173', 'http://localhost:5173']
+}));
 
 app.get('/api/cars', ({ query }: Request<{}, {}, {}, Query>, res) => {
   const { tag } = query;
