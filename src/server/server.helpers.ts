@@ -9,14 +9,20 @@ export const getAllTags = (cars: CarDTO[]) => {
   return getUniqueTags(tagsByCar);
 } 
 
-export const getFilteredTags = (tags: Tags, tagFromQuery: string) => {
-  if (!tagFromQuery) {
+export const getFilteredTags = (tags: Tags, queryTag: string) => {
+  if (queryTag === '') {
+    return [];
+  }
+  if (!queryTag) {
     return tags;
   }
-  return tags.filter((tag) => tag.startsWith(tagFromQuery));
+  return tags.filter((tag) => tag.startsWith(queryTag));
 }
 
 export const getCarsByTag = (tag: string, cars: CarDTO[]) => {
+  if (tag === '') {
+    return [];
+  }
   if (!tag) {
     return cars;
   }

@@ -23,6 +23,11 @@ app.get('/api/cars', ({ query }: Request<{}, {}, {}, Query>, res) => {
   const { tag } = query;
   const carsByTag = getCarsByTag(tag, cars);
 
+  if (carsByTag.length === 0) {
+    res.json(["No Results"]);
+    return;
+  }
+
   res.json(carsByTag);
 });
 
