@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "run-p --race frontend backend",
-    "frontend": "./vite/open-port.sh & vite --host --port 5173",
+    "frontend": "vite --host --port 5173",
     "backend": "tsx watch ./src/server/server.ts",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -44,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "engines": {
+		"node": "^18.0.0",
+		"npm": "^9.0.0"
+	}
 }

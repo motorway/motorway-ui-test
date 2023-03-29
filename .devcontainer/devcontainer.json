@@ -1,15 +1,12 @@
 {
-  "forwardPorts": [5173, 8000],
   "portsAttributes": {
     "5173": {
       "label": "Frontend",
-      "protocol": "https",
-      "onAutoForward": "openBrowser"
+      "protocol": "https"
     },
     "8000": {
       "label": "Backend",
-      "protocol":"https",
-      "onAutoForward": "openBrowser"
+      "protocol":"https"
     }
   }
 }
