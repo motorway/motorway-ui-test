@@ -3,12 +3,12 @@ import RealTimeSearchResults from './components/RealTimeSearchResults';
 
 import './App.css'
 
-/* 
+/*
  * Available endpoints
- * http://localhost:8000/api/tags - to return all tags in
- * http://localhost:8000/api/tags?tag=fe - to return matching tags
- * http://localhost:8000/api/cars - to return all cars
- * http://localhost:8000/api/cars?tag=ferrari - to return matching cars
+ * /api/tags - to return all tags in
+ * /api/tags?tag=fe - to return matching tags
+ * /api/cars - to return all cars
+ * /api/cars?tag=ferrari - to return matching cars
  */
 
 const App: React.FC = () => {
