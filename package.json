@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "run-p --race frontend backend",
     "frontend": "vite --host --port 5173",
     "backend": "tsx watch ./src/server/server.ts",
     "build": "tsc && vite build",

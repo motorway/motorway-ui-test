@@ -14,10 +14,7 @@ const allTags = getAllTags(cars);
 
 const app = express();
 
-app.use(cors({
-  optionsSuccessStatus: 200,
-  origin: ['http://127.0.0.1:5173', 'http://localhost:5173']
-}));
+app.use(cors());
 
 app.get('/api/cars', ({ query }: Request<{}, {}, {}, Query>, res) => {
   const { tag } = query;
