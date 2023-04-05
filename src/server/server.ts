@@ -24,7 +24,7 @@ app.get('/api/cars', ({ query }: Request<{}, {}, {}, Query>, res) => {
   const carsByTag = getCarsByTag(tag, cars);
 
   if (carsByTag.length === 0) {
-    res.json(["No Results"]);
+    res.json([]);
     return;
   }
 
@@ -36,7 +36,7 @@ app.get('/api/tags', ({ query }:  Request<{}, {}, {}, Query>, res): string[] => 
   const tags = getFilteredTags(allTags, tag);
 
   if (tags.length === 0) {
-    res.json(["No Results"]);
+    res.json([]);
     return;
   }
 
