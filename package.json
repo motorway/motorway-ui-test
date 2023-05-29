@@ -34,9 +34,15 @@
     ]
   },
   "overrides": {
-    "nth-check": "^2.0.0"
+    "nth-check": "^2.0.0",
+    "fork-ts-checker-webpack-plugin": "^6.5.3",
+    "typescript": "^5.0.4"
   },
   "devDependencies": {
-    "react-scripts": "^5.0.1"
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^5.0.4",
+    "fork-ts-checker-webpack-plugin": "^6.5.3"
   }
 }
