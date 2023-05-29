@@ -2,3 +2,10 @@
   --motorway-brand-yellow: #fef200;
   --motorway-brand-font: NewTransportSemi, Helvetica, Arial, sans-serif;
 }
+
+.request-duration {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
