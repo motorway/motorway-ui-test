@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import CarPage from "./car-page";
 import type { CarImage } from "./types/image";
 
 import "./App.css";
@@ -18,17 +19,7 @@ const App = () => {
       });
   }, []);
 
-  return (
-    <div className="app">
-      {images &&
-        images.map((img) => (
-          <div key={img.id}>
-            <img src={`${img.url}.jpg`} alt="" />
-            <img src={`${img.user.profile_image}.webp`} alt="" />
-          </div>
-        ))}
-    </div>
-  );
+  return <div className="app">{images && <CarPage images={images} />}</div>;
 };
 
 export default App;

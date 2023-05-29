@@ -1,0 +1,7 @@
+.car-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+  font-family: var(--motorway-brand-font);
+}

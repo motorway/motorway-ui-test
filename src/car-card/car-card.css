@@ -1,0 +1,39 @@
+.car-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+  background-color: var(--motorway-brand-yellow);
+  border-radius: 10px;
+  border-top: solid 10px black;
+  border-bottom: solid 10px black;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+}
+
+.user-section {
+  display: flex;
+  align-items: top;
+  gap: 0.5rem;
+  font-family: var(--motorway-brand-font);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-fullname {
+  font-size: 1rem;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+

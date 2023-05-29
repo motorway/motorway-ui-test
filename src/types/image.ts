@@ -6,7 +6,7 @@ export type User = {
   first_name: string;
   last_name: string;
   bio: string;
-  location: string;
+  location: string | null;
   profile_image: string;
   total_collections: number;
   total_likes: number;
@@ -18,7 +18,7 @@ export type CarImage = {
   created_at: string;
   updated_at: string;
   color: string;
-  description: string;
+  description: string | null;
   alt_description: string;
   categories: string[];
   likes: number;
