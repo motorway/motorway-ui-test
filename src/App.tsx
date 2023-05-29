@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CarPage from "./car-page/car-page";
+import Form from "./form";
 import type { CarImage } from "./types/image";
 
 import "./App.css";
@@ -32,6 +33,7 @@ const App = () => {
           Images loaded in {requestDuration} milliseconds
         </section>
       )}
+      <Form />
     </div>
   );
 };

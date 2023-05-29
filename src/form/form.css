@@ -1,0 +1,18 @@
+.form-section {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--motorway-brand-yellow);
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  width: 250px;
+}
+
+.form-input-error {
+  color: red;
+}
