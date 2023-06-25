@@ -1,4 +1,4 @@
-import { Box, ChakraBaseProvider, extendBaseTheme, Flex } from "@chakra-ui/react";
+import { Box, extendBaseTheme, Flex, ChakraProvider } from "@chakra-ui/react";
 import chakraTheme from "@chakra-ui/theme";
 
 import { Gallery } from "./Gallery";
@@ -6,15 +6,10 @@ import { Form } from "./Form";
 
 const { Button } = chakraTheme.components;
 
-const theme = extendBaseTheme({
-  components: {
-    Button,
-  },
-});
 
 const App = () => {
   return (
-    <ChakraBaseProvider theme={theme}>
+    <ChakraProvider>
       <Flex width={"100%"} height={"100vh"} justifyContent={"space-between"}>
         <Box flexGrow={0}>
           <Gallery />
@@ -23,7 +18,7 @@ const App = () => {
           <Form />
         </Box>
       </Flex>
-    </ChakraBaseProvider>
+    </ChakraProvider>
   );
 };
 
