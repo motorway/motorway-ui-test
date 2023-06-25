@@ -1,13 +1,13 @@
 export type Image = {
   id: string;
-  created_at: string;
-  updated_at: string;
-  color: string;
-  description: string;
+  created_at?: string;
+  updated_at?: string;
+  color?: string;
+  description?: string;
   alt_description: string;
-  categories: string[];
-  likes: number;
-  user: User;
+  categories?: string[];
+  likes?: number;
+  user?: User;
   url: string;
   index: number;
 }

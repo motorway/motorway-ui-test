@@ -8,14 +8,18 @@ import {
   HStack,
   VStack,
 } from "@chakra-ui/react";
-import { getChunks } from "./utils";
+import { generateEmptyImageObjects, getChunks } from "./utils";
 
-export const Gallery = () => {
-  const [images, setImages] = useState<ImageType[]>([]);
+const IMAGES_TO_QUERY = 10;
+
+export const Gallery = ({setIsLoading}: {setIsLoading: (val: boolean) => void}) => {
+  const [images, setImages] = useState<ImageType[]>(
+    generateEmptyImageObjects(IMAGES_TO_QUERY)
+  );
   const chunkedImages = getChunks<ImageType>(images, 3);
 
   useEffect(() => {
-    fetch("images?limit=10")
+    fetch(`images?limit=${IMAGES_TO_QUERY}`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Success:", data);
@@ -25,8 +29,9 @@ export const Gallery = () => {
       })
       .catch((error) => {
         console.error("Error:", error);
-      });
-  }, []);
+      })
+      .finally(() => setIsLoading(false));
+  }, [setIsLoading]);
 
   return (
     <Box height={"95%"} p={"3em"}>
@@ -70,13 +75,15 @@ export const Gallery = () => {
                     loading={image.index < 6 ? "eager" : "lazy"}
                   />
                 </Box>
-                <Box position={"absolute"} bottom={"1.5em"} right={"1em"}>
-                  <Avatar
-                    name={image.user.name}
-                    src={`${image.user.profile_image}.webp`}
-                    boxSize={"3em"}
-                  />
-                </Box>
+                {image.user && (
+                  <Box position={"absolute"} bottom={"1.5em"} right={"1em"}>
+                    <Avatar
+                      name={image.user.name}
+                      src={`${image.user.profile_image}.webp`}
+                      boxSize={"3em"}
+                    />
+                  </Box>
+                )}
               </Box>
             ))}
           </HStack>

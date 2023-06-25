@@ -15,21 +15,13 @@ import {
   SliderTrack,
   useToast,
 } from "@chakra-ui/react";
-import { FormEvent, useEffect, useState } from "react";
-import moment from 'moment';
+import { FormEvent, useState } from "react";
+import moment from "moment";
 
-export const Form = () => {
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+export const Form = ({ isLoading }: { isLoading: boolean }) => {
   const [sliderValue, setSliderValue] = useState(50);
   const toast = useToast();
   const date = moment();
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -67,7 +59,7 @@ export const Form = () => {
 
         <FormControl mt={5} isRequired>
           <FormLabel>Date of Birth</FormLabel>
-          <Input type="date" max={date.format('YYYY-MM-DD')} />
+          <Input type="date" max={date.format("YYYY-MM-DD")} />
         </FormControl>
 
         <FormControl mt={5} isRequired>
