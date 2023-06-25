@@ -49,7 +49,6 @@ export const Form = () => {
   return (
     <Box height={"100%"} width={"40em"} p={"3em"}>
       <Heading>Motorway Form</Heading>
-
       <Divider mt={1} mb={5} />
 
       <form onSubmit={handleSubmit}>

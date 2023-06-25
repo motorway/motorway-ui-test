@@ -1,11 +1,7 @@
-import { Box, extendBaseTheme, Flex, ChakraProvider } from "@chakra-ui/react";
-import chakraTheme from "@chakra-ui/theme";
+import { Box, ChakraProvider, Flex } from "@chakra-ui/react";
 
 import { Gallery } from "./Gallery";
 import { Form } from "./Form";
-
-const { Button } = chakraTheme.components;
-
 
 const App = () => {
   return (

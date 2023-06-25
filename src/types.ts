@@ -9,6 +9,7 @@ export type Image = {
   likes: number;
   user: User;
   url: string;
+  index: number;
 }
 
 type User = {
