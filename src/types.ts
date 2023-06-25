@@ -7,7 +7,7 @@ export type Image = {
   alt_description: string;
   categories: string[];
   likes: number;
-  user: any;
+  user: User;
   url: string;
 }
 
