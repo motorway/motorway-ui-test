@@ -1,6 +1,31 @@
 
 # Motorway UI Test
 
+# Wireframes
+
+add images
+
+
+# Current Setup
+
+
+add image
+
+
+
+# If I had more time
+
+* Complete styling as planned in wireframe
+* Complete form validaton with exceptions
+* Unit tests
+* Improve performance and load time 
+
+```
+Optimize and compress images to reduce file size without sacrificing quality.  Resize andmage Optimization: Optimize and compress your images to reduce their file size without sacrificing quality. You can use tools like ImageOptim or Squoosh to compress images before including them in your application. compress images before including them in your application.
+```
+
+
+
 
 Welcome to the Motorway UI technical test. This test focuses on user experience, and your skills with HTML, CSS, a11y and leveraging browser APIs.
 
@@ -9,7 +34,7 @@ Welcome to the Motorway UI technical test. This test focuses on user experience,
 
 This repo is a slightly modified Create React App and an Express server which serves a JSON feed of images.
 
-- Clone the repo and run `npm install`
+- Clone the repo and run `npm install` including `npm install react-bootstrap`
 
 - `npm run serve` will run the server
 
