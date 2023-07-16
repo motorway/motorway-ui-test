@@ -2,15 +2,10 @@
 # Motorway UI Test
 
 # Wireframes
-
-add images
-
+<img width="698" alt="Screenshot 2023-07-15 at 19 11 37" src="https://github.com/paulinejdavis/motorway-ui-test/assets/111147520/fe401b8e-e860-4f71-ac87-51cd4e9256e4">
 
 # Current Setup
-
-
-add image
-
+<img width="1360" alt="Screenshot 2023-07-16 at 22 15 49" src="https://github.com/paulinejdavis/motorway-ui-test/assets/111147520/65473ec7-f62b-47e6-a270-2cdc4b4a0c6e">
 
 
 # If I had more time
