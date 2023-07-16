@@ -6,7 +6,7 @@
 
 # Current Setup
 <img width="1360" alt="Screenshot 2023-07-16 at 22 15 49" src="https://github.com/paulinejdavis/motorway-ui-test/assets/111147520/65473ec7-f62b-47e6-a270-2cdc4b4a0c6e">
-
+to
 
 # If I had more time
 
@@ -16,11 +16,9 @@
 * Improve performance and load time 
 
 ```
-Optimise and compress images to reduce file size whilst maintain quality.  Compress images before including them in your application.
+Optimise and compress images to reduce file size whilst maintaining quality.  Compress images 
+and resize images to make it easier to work with
 ```
-
-
-
 
 Welcome to the Motorway UI technical test. This test focuses on user experience, and your skills with HTML, CSS, a11y and leveraging browser APIs.
 
