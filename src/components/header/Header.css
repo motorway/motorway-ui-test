@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    border-bottom: 2px solid yellow;
+    color: white;
+  }
+  
+  .logo {
+    margin-Left: '10px' ;
+
+    /* Style logo container here */
+  }
+  
+  .login-button {
+    color: rgb(254,242,0);
+    font-size: 18px;
+    margin-top: 100px;
+    margin-right: 70px;
+    font-family:  'Montserrat', sans-serif;
+  }
