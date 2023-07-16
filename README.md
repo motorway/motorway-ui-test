@@ -21,7 +21,7 @@ add image
 * Improve performance and load time 
 
 ```
-Optimize and compress images to reduce file size without sacrificing quality.  Resize andmage Optimization: Optimize and compress your images to reduce their file size without sacrificing quality. You can use tools like ImageOptim or Squoosh to compress images before including them in your application. compress images before including them in your application.
+Optimise and compress images to reduce file size whilst maintain quality.  Compress images before including them in your application.
 ```
 
 
