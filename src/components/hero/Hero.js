@@ -7,6 +7,10 @@ import offerImage from '../../images/offer.png';
 
 const Hero = () => {
   const [images, setImages] = useState([]);
+  
+  // Fetch images data from api
+  // and update the component state
+  // to render the images dynamically.
 
   useEffect(() => {
     fetch('images?limit=1')

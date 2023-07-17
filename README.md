@@ -11,8 +11,10 @@ to
 # If I had more time
 
 * Complete styling as planned in wireframe
+* Align left more on header log
 * Complete form validaton with exceptions
 * Unit tests
+* Add comments to code 
 * Improve performance and load time 
 
 ```
