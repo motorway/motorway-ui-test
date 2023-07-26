@@ -13,7 +13,7 @@ const Hero = () => {
   // to render the images dynamically.
 
   useEffect(() => {
-    fetch('images?limit=1')
+    fetch('images')
       .then((res) => res.json())
       .then((data) => {
         console.log('Success:', data);
@@ -27,15 +27,16 @@ const Hero = () => {
   return (
     <div className="hero-container">
       <Container>
-        <Row>
+        <Row xs={1} md={2} className="g-3">
           {images.map((img, index) => (
-            <Col md={6} key={img.id} className="grid-item">
+            <Col key={img.id} className="grid-item">
               <div className="image-container">
                 <img src={`${img.user.profile_image}.webp`} alt="" className="profile-image" />
                 <img src={`${img.url}.jpg`} alt="" className="img-fluid small-image" />
                 <img src={enquireImage} alt="Enquire" className="enquire-image" />
                 <img src={offerImage} alt="Offer" className="offer-image" />
               </div>
+              
               <div className="info-container">
                 <div className="text-right">
                   <div className="username">{img.user.username}</div>
