@@ -1,6 +1,26 @@
 
 # Motorway UI Test
 
+# Wireframes
+<img width="698" alt="Screenshot 2023-07-15 at 19 11 37" src="https://github.com/paulinejdavis/motorway-ui-test/assets/111147520/fe401b8e-e860-4f71-ac87-51cd4e9256e4">
+
+# Current Setup
+<img width="1360" alt="Screenshot 2023-07-16 at 22 15 49" src="https://github.com/paulinejdavis/motorway-ui-test/assets/111147520/65473ec7-f62b-47e6-a270-2cdc4b4a0c6e">
+to
+
+# If I had more time
+
+* Complete styling as planned in wireframe
+* Align left more on header log
+* Complete form validaton with exceptions
+* Unit tests
+* Add comments to code 
+* Improve performance and load time 
+
+```
+Optimise and compress images to reduce file size whilst maintaining quality.  Compress images 
+and resize images to make it easier to work with
+```
 
 Welcome to the Motorway UI technical test. This test focuses on user experience, and your skills with HTML, CSS, a11y and leveraging browser APIs.
 
@@ -9,7 +29,7 @@ Welcome to the Motorway UI technical test. This test focuses on user experience,
 
 This repo is a slightly modified Create React App and an Express server which serves a JSON feed of images.
 
-- Clone the repo and run `npm install`
+- Clone the repo and run `npm install` including `npm install react-bootstrap`
 
 - `npm run serve` will run the server
 
