@@ -1,0 +1,229 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 160px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.thumbs {
+  border: 5px solid hotpink;
+  padding: 8px;
+  display: grid;
+  gap: 8px;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory; 
+  scroll-padding: 8px;
+  border-radius: 8px;;
+}
+
+.photoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  border: 2px solid pink;
+  border-radius: 8px;
+  padding: 8px;
+  position: relative;
+}
+
+.shine {
+  overflow: hidden;
+}
+
+.shine::before {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  content: ' ';
+  display: block;
+  height: 100%;
+  left: -75%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+  z-index: 10;
+}
+
+.shine:hover::before {
+  animation: shine 0.85s;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+.photo {
+  background: url(loading.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.modalInteract {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: zoom-in;
+  z-index: 100;
+  transition: 0s;
+}
+
+.modal, .modalActivator {
+  display: none;
+}
+
+.modalActivator:checked + .modalInteract {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: auto;
+  bottom: auto;
+  height: 32px;
+  width: 32px;
+  cursor: zoom-out;
+  z-index: 200;
+  transform: rotate(135deg);
+  margin: calc(5% + 8px);
+}
+
+.modalActivator:checked + .modalInteract:before {
+  background-color: #ff69b488;
+  position: absolute;
+  width: 8px;
+  top: 0;
+  bottom: 0;
+  left: calc((32px / 2) - (8px / 2));
+  content: ' ';
+}
+
+.modalActivator:checked + .modalInteract:after {
+  background-color: #ff69b488;
+  position: absolute;
+  height: 8px;
+  left: 0;
+  right: 0;
+  top: calc((32px / 2) - (8px / 2));
+  content: ' ';
+}
+
+.modalActivator:checked + .modalInteract + .modal {
+  display: block;
+}
+
+.photoNav {
+  display: none;
+}
+
+.modalActivator:checked ~ .photoNav {
+  display: block;
+  z-index: 300;
+  position: fixed;
+  top: 50%;
+  cursor: pointer;
+}
+
+.photoNavLeft {
+  left: 64px;
+}
+
+.photoNavRight {
+  right: 64px;
+}
+
+.modal {
+  background-color: #ffb8c280;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 5%;
+  z-index: 150;
+}
+
+.modalContent {
+  background-color: white;
+  border: 5px solid hotpink;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  position: relative;
+}
+
+.photoInfo {
+  display: flex;
+  gap: 8px;
+  height: 120px;
+  padding: 8px;
+}
+
+.photoInfoHeading {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.photoInfoText {
+  height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.photoLargeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 120px);
+  width: 100%;
+}
+
+.photoLarge {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.userPhoto {
+  max-height: 100%;
+}
+
+.arrow {
+  border: solid #ff69b488;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 8px;
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+}
