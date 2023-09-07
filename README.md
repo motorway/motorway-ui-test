@@ -76,3 +76,9 @@ We appreciate that your time is valuable and recommend you not spend more than 2
 
 The goal of the test is to prove your understanding of the concepts of modern HTML/CSS/JS, but not to produce something production ready or pixel perfect.
 Your work will be tested in the browser of your choice, so please specify this when submitting. This can include pre-release browsers such as Chrome Canary or Safari Technology Preview if you want to work with experimental features.
+
+## Jamie's Notes
+
+- I built this using Edge on desktop and mobile, but it should work on all modern web and mobile browsers.
+- I've mained in Angular and I'm still getting up to speed with React, so it has taken me a little longer than 2 hours. The biggest time sink was trying to work out why there were 2 API calls and then finding a resolution for it. Also my first time making a form in React and I didn't have a great deal of time to research best methods. What I've done seems to do the job though, and a quick "good" is often better than a long "perfect".
+- I have put some `TODO` in the code to show how I would extend it further, but I would also add in some unit testing before considering it ready.
