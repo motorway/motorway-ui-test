@@ -1,0 +1,18 @@
+@use '../../styles/core' as core;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: core.$space * 3 core.$space * 6;
+
+  .logo {
+    flex: 30;
+  }
+
+  .nav {
+    flex: 70;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

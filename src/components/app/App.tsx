@@ -1,9 +1,10 @@
-import RealTimeSearch from './components/RealTimeSearch';
-import RealTimeSearchResults from './components/RealTimeSearchResults';
+import Header from '../header/Header';
+import Hero from '../hero/Hero';
+import Task2 from '../task2/Task2';
 
-import './App.css'
+import './App.module.scss';
 
-/* 
+/*
  * Available endpoints
  * http://localhost:8000/api/tags - to return all tags in
  * http://localhost:8000/api/tags?tag=fe - to return matching tags
@@ -13,12 +14,14 @@ import './App.css'
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <h1>Motorway UI challenge</h1>
-      <RealTimeSearch />
-      <RealTimeSearchResults />
-    </div>
-  )
-}
+    <>
+      <Header />
+      <main className="App">
+        <Hero />
+        <Task2 />
+      </main>
+    </>
+  );
+};
 
-export default App
+export default App;

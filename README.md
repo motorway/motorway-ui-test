@@ -1,8 +1,7 @@
 
 # Motorway UI Test
 
-
-Welcome to the Motorway UI technical test. This test focuses on user experience, and your skills with HTML, CSS, a11y and leveraging browser APIs.
+Welcome to the Motorway UI technical test, focusing on user experience, HTML, CSS, a11y, and leveraging browser APIs.
 
 
 ## Set up
@@ -13,7 +12,7 @@ This repo is a Vite app with simple Express server which serves a JSON feed of c
 
 - `npm run dev` will run both - express server and react app.
 
-After this, we have react app running on `http://localhost:5173/` and express server running on `http://localhost:8000`.
+Afterward, the React app will be available at `http://localhost:5173/`, and the Express server at `http://localhost:8000/`.
 
 There are two endpoints available:
  * http://localhost:8000/api/tags - to return all tags in
@@ -21,11 +20,16 @@ There are two endpoints available:
  * http://localhost:8000/api/cars - to return all cars
  * http://localhost:8000/api/cars?tag=ferrari - to return matching cars
 
-#### Note
 
-- The server and react app are watching the relevant files and will hot reload if any changes are made.
+### Prerequisites 
 
-- Feel free to modify or install whatever code you feel is necessary. If installing packages which are wrappers for native browsers APIs please leave a comment explaining why.
+- Prepare a folder for the live coding challenge.
+- Minimum Node version: 18
+
+### Note
+
+- Both the server and React app watch relevant files and hot reload on changes.
+- Feel free to modify or install necessary code. If installing packages that are wrappers for native browser APIs, please leave a comment explaining why.
 
 
 ## Tasks
@@ -140,6 +144,13 @@ By adding a `tag` query the endpoint will return an array of matching cars `http
   ...
 ]
 ```
+
+## Designs
+
+Use the provided Figma designs as a visual guide for implementing the web page layout, styles, and elements.
+
+Figma: https://www.figma.com/file/AQ6dwlbpusgQzBpJyAqcVq/Recruitment?type=design&node-id=37-932&mode=design
+Password: Motorway
 
 ## Notes
 

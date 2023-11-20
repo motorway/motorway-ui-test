@@ -1,0 +1,6 @@
+@use 'core';
+
+$breakpointTablet: core.$space * 130 - 1; /* 1039 */
+$breakpointTabletMobile: core.$space * 93; /* 744 */
+$breakpointMobile: core.$space * 72 - 1; /* 575 */
+$breakpointTinyMobile: core.$space * 46; /* 368 */

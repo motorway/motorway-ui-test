@@ -1,0 +1,14 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "string-no-newline": true,
+    "indentation": [
+      2,
+      {
+        "baseIndentLevel": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+@use '../../styles/core' as core;
+@use '../../styles/color' as color;
+
+.links {
+  display: flex;
+  gap: core.$space * 6;
+  list-style: none;
+  margin: 0;
+
+  .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: core.$space;
+    color: color.$text-color;
+  }
+
+  .icon {
+    height: core.$space * 2;
+    width: core.$space * 2;
+  }
+}
