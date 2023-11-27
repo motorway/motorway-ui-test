@@ -5,6 +5,6 @@ import App from './App';
 describe('App.tsx', () => {
   it('renders correctly', () => {
     const result = render(<App />);
-    expect(result).toMatchSnapshot();
+    expect(result.container).toMatchSnapshot();
   });
 });
