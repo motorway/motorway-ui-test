@@ -1,0 +1,474 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App.tsx > renders correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="_header_accb48"
+      >
+        <div
+          class="_logo_accb48"
+        >
+          <svg
+            fill="none"
+            height="48"
+            viewBox="0 0 216 48"
+            width="216"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              clip-path="url(#clip0_100_457)"
+            >
+              <mask
+                height="32"
+                id="mask0_100_457"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="160"
+                x="0"
+                y="10"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M0 10H160V42H0V10Z"
+                  fill="white"
+                  fill-rule="evenodd"
+                />
+              </mask>
+              <g
+                mask="url(#mask0_100_457)"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M154.722 18.0202C154.722 19.4776 155.903 20.659 157.361 20.659C158.819 20.659 160 19.4776 160 18.0202C160 16.5622 158.819 15.3803 157.361 15.3803C155.903 15.3803 154.722 16.5622 154.722 18.0202ZM146.304 15.6089H140.727L148.345 28.8039L140.727 42H146.304L153.923 28.8039L146.304 15.6089ZM135.455 27.6242C135.455 29.221 134.2 30.2477 132.223 30.2477C130.549 30.2477 129.409 29.3728 129.409 28.1181C129.409 27.0535 130.17 26.4451 132.033 26.0274C133.211 25.761 134.162 25.6848 135.455 25.6086V27.6242ZM140.246 27.7382V21.8448C140.246 18.9927 139.789 18.1178 138.344 16.9771C137.052 15.9125 135.226 15.3803 132.907 15.3803C130.194 15.3803 127.994 15.9577 125.581 17.3502L127.671 20.9711C129.454 19.994 131.304 19.4488 132.793 19.4488C133.972 19.4488 134.884 19.867 135.226 20.5895C135.417 21.0078 135.417 20.8559 135.417 22.1107C131.31 22.3766 128.648 22.9088 127.014 23.8599C125.531 24.7342 124.656 26.331 124.656 28.1181C124.656 31.5025 127.736 34.126 131.729 34.126C133.82 34.126 135.151 33.5175 136.178 32.1488C137.128 33.4035 138.344 34.0498 139.675 34.0498C139.823 34.0498 139.944 34.0498 140.076 34.0413L142.069 30.5898C140.513 30.2472 140.246 29.7905 140.246 27.7382ZM62.2222 28.998C61.3225 29.2221 60.9054 29.2599 60.3008 29.2599C58.5127 29.2599 58.0182 28.6515 58.0182 26.4456V19.5233H62.2222V15.6055H58.0182V10H53.1883V15.6055H50.3734V19.5233H53.1883V28.4991C53.1883 30.5531 53.3401 31.2756 53.9108 32.0364C54.6716 33.0632 56.2306 33.6338 58.3609 33.6338C59.7793 33.6338 61.0527 33.4628 62.2222 33.1083V28.998ZM68.2703 24.7534C68.2703 27.7258 70.3181 29.8091 73.0545 29.8091C75.7909 29.8091 77.8574 27.7258 77.8574 24.7534C77.8574 21.7805 75.7909 19.6977 73.0545 19.6977C70.3181 19.6977 68.2703 21.7805 68.2703 24.7534ZM82.5406 24.7534C82.5406 30.1202 78.511 34.126 73.0545 34.126C67.6161 34.126 63.6051 30.1202 63.6051 24.7534C63.6051 19.3867 67.6161 15.3803 73.0545 15.3803C78.511 15.3803 82.5406 19.3867 82.5406 24.7534ZM35.2903 24.7534C35.2903 27.7258 37.3381 29.8091 40.0745 29.8091C42.8104 29.8091 44.8774 27.7258 44.8774 24.7534C44.8774 21.7805 42.8104 19.6977 40.0745 19.6977C37.3381 19.6977 35.2903 21.7805 35.2903 24.7534ZM49.56 24.7534C49.56 30.1202 45.531 34.126 40.0745 34.126C34.6361 34.126 30.6251 30.1202 30.6251 24.7534C30.6251 19.3867 34.6361 15.3803 40.0745 15.3803C45.531 15.3803 49.56 19.3867 49.56 24.7534ZM119.205 33.5937H113.577L110.725 22.757L108.14 33.5937H102.284L97.3793 15.6089H102.284L105.288 27.776L108.14 15.6089H113.273L116.353 27.776L119.205 15.6089H124.186L119.205 33.5937ZM84.8317 33.5937V15.6089H89.3184L89.5849 17.6239C91.0676 16.0649 92.3224 15.3803 93.8058 15.3803C94.3375 15.3803 94.7941 15.4187 95.5928 15.6089V20.1335C95.2886 20.0951 95.0222 20.0951 94.946 20.0951C93.1973 20.0951 92.056 20.4377 91.0676 21.2742C89.8513 22.2625 89.5849 23.099 89.5849 25.6086V33.5937H84.8317ZM23.1564 33.5937V23.8599C23.1564 21.0078 22.168 19.7152 20.0006 19.7152C18.7836 19.7152 17.6807 20.2853 17.0344 21.2742C16.5021 22.1107 16.3125 22.985 16.3125 24.6202V33.5937H11.5593V24.3538C11.5593 22.7948 11.3691 21.8065 10.9886 21.1218C10.4942 20.2853 9.42963 19.753 8.32727 19.753C6.04578 19.753 4.71481 21.3498 4.71481 24.1636V33.5937H0V15.6089H4.44896L4.71481 17.0917C6.46403 15.8363 7.71879 15.3803 9.42963 15.3803C11.6733 15.3803 13.3085 16.179 15.1334 18.1178C17.1868 16.179 18.8976 15.3803 21.0651 15.3803C23.4606 15.3803 25.4757 16.3308 26.731 18.08C27.6815 19.411 27.9474 20.4755 27.9474 23.099V33.5937H23.1564Z"
+                  fill="white"
+                  fill-rule="evenodd"
+                />
+              </g>
+            </g>
+            <defs>
+              <clippath
+                id="clip0_100_457"
+              >
+                <rect
+                  fill="white"
+                  height="48"
+                  width="160"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </div>
+        <div
+          class="_nav_accb48"
+        >
+          <div
+            class="Task1"
+          >
+            <div
+              class="_search_3f6efa"
+            >
+              <div
+                class="_wrapper_3f6efa"
+              >
+                <input
+                  class="_input_3f6efa"
+                  type="text"
+                  value="ferr"
+                />
+                <div
+                  class="_clear_3f6efa"
+                >
+                  <svg
+                    fill="none"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      id="Filled=False"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M40 24C40 32.8366 32.8366 40 24 40C15.1634 40 8 32.8366 8 24C8 15.1634 15.1634 8 24 8C32.8366 8 40 15.1634 40 24ZM43 24C43 34.4934 34.4934 43 24 43C13.5066 43 5 34.4934 5 24C5 13.5066 13.5066 5 24 5C34.4934 5 43 13.5066 43 24ZM29.8182 16L32 18.1818L26.1818 24L32 29.8182L29.8182 32L24 26.1818L18.1818 32L16 29.8182L21.8182 24L16 18.1818L18.1818 16L24 21.8182L29.8182 16Z"
+                        fill="#fff"
+                        fill-rule="evenodd"
+                        id="Union"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul
+            class="_links_db0e26"
+          >
+            <li
+              class="_link_db0e26"
+            >
+              <span
+                class="_text_db0e26"
+              >
+                Dashboard
+              </span>
+            </li>
+            <li
+              class="_link_db0e26"
+            >
+              <span
+                class="_text_db0e26"
+              >
+                Categories
+              </span>
+              <svg
+                class="_icon_db0e26"
+                fill="none"
+                height="48"
+                viewBox="0 0 48 48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  id="Direction=Down"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M8.44365 14.2011L24 29.7574L39.5563 14.2011L41.6738 16.3272L24 34.0001L6.32366 16.3237L8.44365 14.2011Z"
+                    fill="#fff"
+                    fill-rule="evenodd"
+                    id="Union"
+                  />
+                </g>
+              </svg>
+            </li>
+            <li
+              class="_link_db0e26"
+            >
+              <span
+                class="_text_db0e26"
+              >
+                Saved Images
+              </span>
+              <svg
+                class="_icon_db0e26"
+                fill="none"
+                height="48"
+                viewBox="0 0 48 48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  id="Direction=Down"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M8.44365 14.2011L24 29.7574L39.5563 14.2011L41.6738 16.3272L24 34.0001L6.32366 16.3237L8.44365 14.2011Z"
+                    fill="#fff"
+                    fill-rule="evenodd"
+                    id="Union"
+                  />
+                </g>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main
+        class="App"
+      >
+        <div
+          class="_hero_8a1d90"
+        >
+          <section
+            class="_infoSection_8a1d90"
+          >
+            <h1
+              class="_title_8a1d90"
+            >
+              Welcome back to Motorway
+            </h1>
+            <h2
+              class="_subtitle_8a1d90"
+            >
+              The worlds best online car image library taken by professional photographers
+            </h2>
+          </section>
+          <section
+            class="_imageSection_8a1d90"
+          >
+            <img
+              alt=""
+              src="images/hero.png"
+            />
+          </section>
+        </div>
+        <div
+          class="Task2"
+        />
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="_header_accb48"
+    >
+      <div
+        class="_logo_accb48"
+      >
+        <svg
+          fill="none"
+          height="48"
+          viewBox="0 0 216 48"
+          width="216"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            clip-path="url(#clip0_100_457)"
+          >
+            <mask
+              height="32"
+              id="mask0_100_457"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: luminance;"
+              width="160"
+              x="0"
+              y="10"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M0 10H160V42H0V10Z"
+                fill="white"
+                fill-rule="evenodd"
+              />
+            </mask>
+            <g
+              mask="url(#mask0_100_457)"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M154.722 18.0202C154.722 19.4776 155.903 20.659 157.361 20.659C158.819 20.659 160 19.4776 160 18.0202C160 16.5622 158.819 15.3803 157.361 15.3803C155.903 15.3803 154.722 16.5622 154.722 18.0202ZM146.304 15.6089H140.727L148.345 28.8039L140.727 42H146.304L153.923 28.8039L146.304 15.6089ZM135.455 27.6242C135.455 29.221 134.2 30.2477 132.223 30.2477C130.549 30.2477 129.409 29.3728 129.409 28.1181C129.409 27.0535 130.17 26.4451 132.033 26.0274C133.211 25.761 134.162 25.6848 135.455 25.6086V27.6242ZM140.246 27.7382V21.8448C140.246 18.9927 139.789 18.1178 138.344 16.9771C137.052 15.9125 135.226 15.3803 132.907 15.3803C130.194 15.3803 127.994 15.9577 125.581 17.3502L127.671 20.9711C129.454 19.994 131.304 19.4488 132.793 19.4488C133.972 19.4488 134.884 19.867 135.226 20.5895C135.417 21.0078 135.417 20.8559 135.417 22.1107C131.31 22.3766 128.648 22.9088 127.014 23.8599C125.531 24.7342 124.656 26.331 124.656 28.1181C124.656 31.5025 127.736 34.126 131.729 34.126C133.82 34.126 135.151 33.5175 136.178 32.1488C137.128 33.4035 138.344 34.0498 139.675 34.0498C139.823 34.0498 139.944 34.0498 140.076 34.0413L142.069 30.5898C140.513 30.2472 140.246 29.7905 140.246 27.7382ZM62.2222 28.998C61.3225 29.2221 60.9054 29.2599 60.3008 29.2599C58.5127 29.2599 58.0182 28.6515 58.0182 26.4456V19.5233H62.2222V15.6055H58.0182V10H53.1883V15.6055H50.3734V19.5233H53.1883V28.4991C53.1883 30.5531 53.3401 31.2756 53.9108 32.0364C54.6716 33.0632 56.2306 33.6338 58.3609 33.6338C59.7793 33.6338 61.0527 33.4628 62.2222 33.1083V28.998ZM68.2703 24.7534C68.2703 27.7258 70.3181 29.8091 73.0545 29.8091C75.7909 29.8091 77.8574 27.7258 77.8574 24.7534C77.8574 21.7805 75.7909 19.6977 73.0545 19.6977C70.3181 19.6977 68.2703 21.7805 68.2703 24.7534ZM82.5406 24.7534C82.5406 30.1202 78.511 34.126 73.0545 34.126C67.6161 34.126 63.6051 30.1202 63.6051 24.7534C63.6051 19.3867 67.6161 15.3803 73.0545 15.3803C78.511 15.3803 82.5406 19.3867 82.5406 24.7534ZM35.2903 24.7534C35.2903 27.7258 37.3381 29.8091 40.0745 29.8091C42.8104 29.8091 44.8774 27.7258 44.8774 24.7534C44.8774 21.7805 42.8104 19.6977 40.0745 19.6977C37.3381 19.6977 35.2903 21.7805 35.2903 24.7534ZM49.56 24.7534C49.56 30.1202 45.531 34.126 40.0745 34.126C34.6361 34.126 30.6251 30.1202 30.6251 24.7534C30.6251 19.3867 34.6361 15.3803 40.0745 15.3803C45.531 15.3803 49.56 19.3867 49.56 24.7534ZM119.205 33.5937H113.577L110.725 22.757L108.14 33.5937H102.284L97.3793 15.6089H102.284L105.288 27.776L108.14 15.6089H113.273L116.353 27.776L119.205 15.6089H124.186L119.205 33.5937ZM84.8317 33.5937V15.6089H89.3184L89.5849 17.6239C91.0676 16.0649 92.3224 15.3803 93.8058 15.3803C94.3375 15.3803 94.7941 15.4187 95.5928 15.6089V20.1335C95.2886 20.0951 95.0222 20.0951 94.946 20.0951C93.1973 20.0951 92.056 20.4377 91.0676 21.2742C89.8513 22.2625 89.5849 23.099 89.5849 25.6086V33.5937H84.8317ZM23.1564 33.5937V23.8599C23.1564 21.0078 22.168 19.7152 20.0006 19.7152C18.7836 19.7152 17.6807 20.2853 17.0344 21.2742C16.5021 22.1107 16.3125 22.985 16.3125 24.6202V33.5937H11.5593V24.3538C11.5593 22.7948 11.3691 21.8065 10.9886 21.1218C10.4942 20.2853 9.42963 19.753 8.32727 19.753C6.04578 19.753 4.71481 21.3498 4.71481 24.1636V33.5937H0V15.6089H4.44896L4.71481 17.0917C6.46403 15.8363 7.71879 15.3803 9.42963 15.3803C11.6733 15.3803 13.3085 16.179 15.1334 18.1178C17.1868 16.179 18.8976 15.3803 21.0651 15.3803C23.4606 15.3803 25.4757 16.3308 26.731 18.08C27.6815 19.411 27.9474 20.4755 27.9474 23.099V33.5937H23.1564Z"
+                fill="white"
+                fill-rule="evenodd"
+              />
+            </g>
+          </g>
+          <defs>
+            <clippath
+              id="clip0_100_457"
+            >
+              <rect
+                fill="white"
+                height="48"
+                width="160"
+              />
+            </clippath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="_nav_accb48"
+      >
+        <div
+          class="Task1"
+        >
+          <div
+            class="_search_3f6efa"
+          >
+            <div
+              class="_wrapper_3f6efa"
+            >
+              <input
+                class="_input_3f6efa"
+                type="text"
+                value="ferr"
+              />
+              <div
+                class="_clear_3f6efa"
+              >
+                <svg
+                  fill="none"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  width="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    id="Filled=False"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M40 24C40 32.8366 32.8366 40 24 40C15.1634 40 8 32.8366 8 24C8 15.1634 15.1634 8 24 8C32.8366 8 40 15.1634 40 24ZM43 24C43 34.4934 34.4934 43 24 43C13.5066 43 5 34.4934 5 24C5 13.5066 13.5066 5 24 5C34.4934 5 43 13.5066 43 24ZM29.8182 16L32 18.1818L26.1818 24L32 29.8182L29.8182 32L24 26.1818L18.1818 32L16 29.8182L21.8182 24L16 18.1818L18.1818 16L24 21.8182L29.8182 16Z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                      id="Union"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul
+          class="_links_db0e26"
+        >
+          <li
+            class="_link_db0e26"
+          >
+            <span
+              class="_text_db0e26"
+            >
+              Dashboard
+            </span>
+          </li>
+          <li
+            class="_link_db0e26"
+          >
+            <span
+              class="_text_db0e26"
+            >
+              Categories
+            </span>
+            <svg
+              class="_icon_db0e26"
+              fill="none"
+              height="48"
+              viewBox="0 0 48 48"
+              width="48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                id="Direction=Down"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M8.44365 14.2011L24 29.7574L39.5563 14.2011L41.6738 16.3272L24 34.0001L6.32366 16.3237L8.44365 14.2011Z"
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  id="Union"
+                />
+              </g>
+            </svg>
+          </li>
+          <li
+            class="_link_db0e26"
+          >
+            <span
+              class="_text_db0e26"
+            >
+              Saved Images
+            </span>
+            <svg
+              class="_icon_db0e26"
+              fill="none"
+              height="48"
+              viewBox="0 0 48 48"
+              width="48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                id="Direction=Down"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M8.44365 14.2011L24 29.7574L39.5563 14.2011L41.6738 16.3272L24 34.0001L6.32366 16.3237L8.44365 14.2011Z"
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  id="Union"
+                />
+              </g>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main
+      class="App"
+    >
+      <div
+        class="_hero_8a1d90"
+      >
+        <section
+          class="_infoSection_8a1d90"
+        >
+          <h1
+            class="_title_8a1d90"
+          >
+            Welcome back to Motorway
+          </h1>
+          <h2
+            class="_subtitle_8a1d90"
+          >
+            The worlds best online car image library taken by professional photographers
+          </h2>
+        </section>
+        <section
+          class="_imageSection_8a1d90"
+        >
+          <img
+            alt=""
+            src="images/hero.png"
+          />
+        </section>
+      </div>
+      <div
+        class="Task2"
+      />
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
