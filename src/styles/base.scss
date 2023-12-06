@@ -1,0 +1,15 @@
+@use './core';
+
+$default-font-size: core.$core-font-size!default;
+
+@use './typography' with (
+  $font-size: $default-font-size,
+);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include typography.body-font-styles;
+}

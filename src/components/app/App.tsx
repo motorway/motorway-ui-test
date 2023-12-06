@@ -1,8 +1,7 @@
 import Header from '../header/Header';
-import Hero from '../hero/Hero';
 import Task2 from '../task2/Task2';
 
-import './App.module.scss';
+import styles from './App.module.scss';
 
 /*
  * Available endpoints
@@ -16,8 +15,7 @@ const App: React.FC = () => {
   return (
     <>
       <Header />
-      <main className="App">
-        <Hero />
+      <main className={styles.main}>
         <Task2 />
       </main>
     </>

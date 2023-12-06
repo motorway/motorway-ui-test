@@ -8,11 +8,13 @@
 
   .logo {
     flex: 30;
+    display: flex;
   }
 
   .nav {
     flex: 70;
     display: flex;
     justify-content: flex-end;
+    gap: core.$space * 6;
   }
 }
