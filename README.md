@@ -149,7 +149,7 @@ By adding a `tag` query the endpoint will return an array of matching cars `http
 
 Use the provided Figma designs as a visual guide for implementing the web page layout, styles, and elements.
 
-Figma: https://www.figma.com/file/AQ6dwlbpusgQzBpJyAqcVq/Recruitment?type=design&node-id=37-932&mode=design
+Figma: https://www.figma.com/file/AQ6dwlbpusgQzBpJyAqcVq/Recruitment?type=design&node-id=0-1&mode=design&t=5ICSMjEzDNgfOBVg-0
 Password: Motorway
 
 ## Notes
