@@ -1,0 +1,158 @@
+.form-container { 
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+form {
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+.input-wrapper input,
+.input-wrapper select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-wrapper input[id$="Error"],
+.input-wrapper select[id$="Error"] {
+  border-color: red;
+}
+label.salary-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .range-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="range"] {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+    
+  .range-outcome {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #284b8d;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #4578a0;
+  }
+  
+.range-salary-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .salary {
+    font-size: 2em;
+    text-align: center;
+    align-self: flex-start;
+    padding-left: 20px;
+  }
+
+  
+  div[id$="Error"] {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .input-wrapper { 
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+
+  .success-message {
+    color: #45a049;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .wrapper-for-salary-and-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  input[type="range"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #eaeaea;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .form-container {
+      flex-basis: 33%;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .form-container {
+      flex-basis: 33%;
+      padding-right: 40px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .form-container {
+      flex-basis: 33%;
+      padding-right: 40px;
+    }
+  }
+
+
+  @media screen and (max-width: 950px) {
+    .form-container {
+      flex-basis: 33%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .form-container {
+      flex-basis: 33%;
+      padding:0;
+      align-self: center;
+      margin-bottom: 20px;
+
+    }
+    form {
+      min-width: 350px;
+      padding: 8px;
+      
+    }
+  }
