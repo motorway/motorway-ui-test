@@ -4,7 +4,7 @@ import "./ModalComponent.css";
 
 const ModalComponent = ({ closeModal, selectedImage }) => {
   return (
-    <div className="modal" onClick={closeModal}>
+    <div className="modal" role="dialog" onClick={closeModal}>
       <ImageComponent
         imagePath={selectedImage.url}
         altText={selectedImage.alt_description}

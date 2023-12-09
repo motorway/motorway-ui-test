@@ -98,6 +98,7 @@ const FormComponent = () => {
                   onChange={handleChange}
                   aria-label="Name"
                   aria-describedby={errors.name ? "nameError" : null}
+                  placeholder="Please enter your name"
                 />
               </label>
               {errors.name && <div id="nameError">{errors.name}</div>}
@@ -113,6 +114,7 @@ const FormComponent = () => {
                   onChange={handleChange}
                   aria-label="Email"
                   aria-describedby={errors.email ? "emailError" : null}
+                  placeholder="Please enter your email"
                 />
               </label>
               {errors.email && <div id="emailError">{errors.email}</div>}
@@ -128,6 +130,7 @@ const FormComponent = () => {
                   onChange={handleChange}
                   aria-label="Date of Birth"
                   aria-describedby={errors.dob ? "dobError" : null}
+                  placeholder="Please enter your date of birth in the format DD/MM/YYYY"
                 />
               </label>
               {errors.dob && <div id="dobError">{errors.dob}</div>}
@@ -143,6 +146,7 @@ const FormComponent = () => {
                   onChange={handleChange}
                   aria-label="Favorite Color"
                   aria-describedby={errors.color ? "colorError" : null}
+                  placeholder="Please enter your favorite color"
                 />
               </label>
               {errors.color && <div id="colorError">{errors.color}</div>}
