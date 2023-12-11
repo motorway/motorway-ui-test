@@ -5,7 +5,7 @@ describe("validateForm", () => {
     const formData = {
       name: "John Doe",
       email: "john@example.com",
-      dob: "1990-01-01",
+      dob: "01/01/1990",
       color: "blue",
       salary: 50000,
     };
@@ -29,6 +29,7 @@ describe("validateForm", () => {
     expect(errors).toEqual({
       name: "Name must contain only letters",
       email: "Invalid email format",
+      dob: "Invalid date of birth format",
       color: "Favorite color must contain only letters",
       salary: "Salary must be greater than 0",
     });

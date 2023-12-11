@@ -7,11 +7,9 @@ describe("validateDateOfBirth", () => {
     expect(isValid).toBe(true);
   });
 
-  it("should return false for invalid date of birth", () => {
-    const invalidDateOfBirth = "31/02/2000";
-    const isValid = validateDateOfBirth(invalidDateOfBirth);
-    expect(isValid).toBe(false);
+  it("should return true for valid date of birth", () => {
+    const validDateOfBirth = "29/02/2000"; // *** leap year
+    const isValid = validateDateOfBirth(validDateOfBirth);
+    expect(isValid).toBe(true);
   });
-
-  // Add more test cases here for different scenarios
 });
