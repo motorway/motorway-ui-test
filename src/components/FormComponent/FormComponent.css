@@ -34,6 +34,7 @@ form {
 .input-wrapper select[id$="Error"] {
   border-color: red;
 }
+
 label.salary-label {
     display: flex;
     align-items: center;
@@ -81,22 +82,14 @@ label.salary-label {
     font-size: 2em;
     text-align: center;
     align-self: flex-start;
-    padding-left: 20px;
   }
-
   
-  div[id$="Error"] {
-    color: red;
-    margin-top: 5px;
-    font-size: 14px;
-  }
-
   .input-wrapper { 
     padding: 10px;
     margin-bottom: 10px;
+    margin-top: 5px;
   }
   
-
   .success-message {
     color: #45a049;
     font-size: 3em;
@@ -113,6 +106,17 @@ label.salary-label {
   input[type="range"]:focus {
     outline: none;
     box-shadow: 0 0 0 1px #eaeaea;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  .visible {
+    visibility: visible;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: red;
   }
 
   @media screen and (min-width: 1200px) {

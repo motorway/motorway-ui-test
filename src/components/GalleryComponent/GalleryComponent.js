@@ -19,12 +19,12 @@ const GalleryComponent = ({ images }) => {
       <div className="gallery">
         {images.map((image) => (
           <div
-            className="gallery__image__wrapper"
+            className="gallery-image-wrapper"
             key={image.id}
             onClick={() => openModal(image)}
           >
             <ImageComponent
-              className="gallery__image"
+              className="gallery-image"
               imagePath={image.url}
               altText={image.alt_description}
             />
