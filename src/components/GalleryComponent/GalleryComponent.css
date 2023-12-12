@@ -6,11 +6,12 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
+    overflow: auto;
+    height: 100vh;
 }
 
 
 .gallery-image-wrapper:hover {
-    
 cursor: pointer;
 }
 

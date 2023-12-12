@@ -2,6 +2,8 @@
   display: flex;
   flex-basis: 100%;
   justify-content: center;
+  position: sticky;
+  top: 35%;
 }
 
 form {
@@ -29,6 +31,12 @@ form {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+/* TODO: i need to test this more, very efffective */
+/* .input-wrapper input:invalid{
+  border-color: red;
+} */
+
 
 .input-wrapper input[id$="Error"],
 .input-wrapper select[id$="Error"] {
@@ -108,6 +116,12 @@ label.salary-label {
     box-shadow: 0 0 0 1px #eaeaea;
   }
   
+.input-wrapper .visible,
+.input-wrapper .hidden {
+   
+   min-height: 20px;
+  }
+
   .hidden {
     visibility: hidden;
   }
