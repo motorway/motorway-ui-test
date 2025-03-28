@@ -1,8 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 
+interface Image {
+  id: string;
+  url: string;
+  user: {
+    profile_image: string;
+  };
+}
+
 const App = () => {
-  const [images, setImages] = useState();
+  const [images, setImages] = useState<Image[] | null>(null);
 
   useEffect(() => {
     fetch('images?limit=10')
