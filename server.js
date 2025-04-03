@@ -1,7 +1,7 @@
 'use strict';
 
 const app = require('express')();
-const images = require('./src/images.json');
+const images = require('./public/images.json');
 
 const randomInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -12,9 +12,9 @@ app.get('/images', ({ query }, res) => {
 
   setTimeout(() => {
     return res.status(200).json(i);
-  }, randomInterval(500, 1500));
+  }, randomInterval(500, 3000));
 });
 
-app.listen(5000, () => {
-  process.stdout.write('Server is available on http://localhost:5000/\n');
+app.listen(5010, () => {
+  process.stdout.write('Server is available on http://localhost:5010/\n');
 });
