@@ -21,8 +21,7 @@ For this test, you should provide:
 
 1. An image gallery UI with the features you've implemented
 1. A form with the specified fields
-1. A brief explanation of your approach and any decisions you made (c
-an be included as comments in your code)
+1. A brief explanation of your approach and any decisions you made (can be included as comments in your code)
 1. Performance and UX considerations
 
 ## Evaluation Criteria
