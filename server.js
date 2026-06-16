@@ -1,7 +1,7 @@
-'use strict';
+import express from 'express';
+import images from './public/images.json' with { type: 'json' };
 
-const app = require('express')();
-const images = require('./public/images.json');
+const app = express();
 
 const randomInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
