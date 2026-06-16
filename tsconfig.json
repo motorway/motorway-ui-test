@@ -7,9 +7,10 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "resolveJsonModule": true,
+    "types": ["vite/client"],
 
     /* Bundler mode */
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "moduleDetection": "auto",
